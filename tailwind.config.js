@@ -23,11 +23,8 @@ module.exports = {
       '9xl': ['8rem', '1'],
     },
     fontFamily: {
-      'sans': ['proxima-nova', 'ui-sans-serif'],
-      'sans-tight': ['proxima-nova-condensed', 'ui-sans-serif'],
-      'mono': ['Inconsolata', 'ui-mono', 'monospace'],
-      'soft': ['proxima-soft', 'ui-sans-serif'],
-      'soft-tight': ['proxima-soft-condensed', 'ui-sans-serif'],
+      'small-headings-text': ['Ledger', 'serif;'],
+      'big-headings-text': ['Dancing Script', 'cursive;'],
     },
     extend: {
       colors: {
