@@ -404,8 +404,23 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
 .sticky {
   position: sticky;
+}
+.top-0 {
+  top: 0px;
+}
+.left-0 {
+  left: 0px;
+}
+.right-0 {
+  right: 0px;
 }
 .col-span-4 {
   grid-column: span 4 / span 4;
@@ -468,6 +483,9 @@ video {
 }
 .justify-between {
   justify-content: space-between;
+}
+.self-start {
+  align-self: flex-start;
 }
 .bg-blue-color {
   --tw-bg-opacity: 1;
@@ -557,4 +575,9 @@ video {
 
 html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
+}
+
+.hover\:text-featured-color:hover {
+  --tw-text-opacity: 1;
+  color: rgb(190 233 232 / var(--tw-text-opacity));
 }
