@@ -445,9 +445,6 @@ video {
 .max-w-md {
   max-width: 28rem;
 }
-.max-w-\[70\%\] {
-  max-width: 70%;
-}
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
@@ -476,9 +473,6 @@ video {
 .p-4 {
   padding: 1rem;
 }
-.p-1 {
-  padding: 0.25rem;
-}
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -494,6 +488,12 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.font-big-headings {
+  font-family: Dancing Script, cursive;
+}
+.font-small-headings {
+  font-family: Ledger, serif;
 }
 .text-6xl {
   font-size: 3.75rem;
