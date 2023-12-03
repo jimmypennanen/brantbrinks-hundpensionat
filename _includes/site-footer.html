@@ -1,0 +1,28 @@
+<footer class="bg-blue-color text-white">
+    <div class="grid grid-cols-5 p-5">
+        {% for item in site.data.settings.footer %}
+        <div class="text-white px-15p">
+
+            <h4 class="mb-3 "> {{ item.heading }} </h4>
+            {% for link in item.links %}
+
+            <a href=" {{link.url}}" class="block py-0.1 mb-0.5 text-sm"> {{ link.text }} </a>
+
+             {% endfor %}
+        </div>
+
+        {% endfor %}
+
+        <form class=" col-span-2 uppercase text-right grid grid-cols-1">
+
+            <label for="email" class="mb-3"> subscribe to our newsletter </label>
+            <input id="email" name="email" type="email" class="mb-3 border border-white bg-main-color max-w-sm w-full ml-auto ">
+            <input type="submit" value="subscribe" class="bg-second-color text-main-color py-1 px-4  ml-auto cursor-pointer">
+
+        </form>
+
+    </div>
+    <div class="px-3 py-5 border-t">
+        <span class="m-[2.2rem] text-xs"> terms of use </span>
+    </div>
+</footer>
