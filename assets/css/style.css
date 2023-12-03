@@ -410,6 +410,12 @@ video {
 .top-0 {
   top: 0px;
 }
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
@@ -417,8 +423,15 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+.mt-6 {
+  margin-top: 1.5rem;
 }
 .mb-4 {
   margin-bottom: 1rem;
@@ -447,6 +460,9 @@ video {
 .max-w-md {
   max-width: 28rem;
 }
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
@@ -465,6 +481,9 @@ video {
 .justify-between {
   justify-content: space-between;
 }
+.rounded-tr-\[65\%\] {
+  border-top-right-radius: 65%;
+}
 .bg-blue-color {
   --tw-bg-opacity: 1;
   background-color: rgb(95 168 211 / var(--tw-bg-opacity));
@@ -479,11 +498,22 @@ video {
 .bg-center {
   background-position: center;
 }
+.p-15p {
+  padding: 15%;
+}
 .p-5p {
   padding: 5%;
 }
 .p-4 {
   padding: 1rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 .py-5 {
   padding-top: 1.25rem;
@@ -500,10 +530,6 @@ video {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 .font-cursive-text {
   font-family: Dancing Script, cursive;
@@ -523,6 +549,14 @@ video {
   font-size: 2.25rem;
   line-height: 1;
 }
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -536,6 +570,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(95 168 211 / var(--tw-text-opacity));
 }
+.text-light-color {
+  --tw-text-opacity: 1;
+  color: rgb(202 233 255 / var(--tw-text-opacity));
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -547,6 +585,21 @@ html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
 }
 
+/*---------------- This is the blurry part of the hero-banner ----------------*/
+.blurred-background {
+  background-size: cover;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px); /* Adjust the blur level as needed */
+  background-color: rgba(95, 168, 211, 0.1) /* Adjust the alpha channel for transparency */
+}
+.hover\:bg-light-color:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(202 233 255 / var(--tw-bg-opacity));
+}
+.hover\:text-blue-color:hover {
+  --tw-text-opacity: 1;
+  color: rgb(95 168 211 / var(--tw-text-opacity));
+}
 .hover\:text-featured-color:hover {
   --tw-text-opacity: 1;
   color: rgb(190 233 232 / var(--tw-text-opacity));

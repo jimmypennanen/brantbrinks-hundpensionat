@@ -12,3 +12,10 @@
 html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
 }
+
+/*---------------- This is the blurry part of the hero-banner ----------------*/
+.blurred-background {
+  background-size: cover;
+  backdrop-filter: blur(1px); /* Adjust the blur level as needed */
+  background-color: rgba(95, 168, 211, 0.1) /* Adjust the alpha channel for transparency */
+}
