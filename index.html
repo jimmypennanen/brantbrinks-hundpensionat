@@ -33,17 +33,16 @@ seo:
 <!---------------- This is the big image-banner on the top of the page ---------------->
 {% include hero-banner.html %}
 
-<section>
-  <h2> Priser </h2>
-  <div>
+<section class="p-5p text-center bg-light-color">
+  <h2 class="uppercase font-cursive-text mb-10"> <span> <hr> </span> Priser <span> <hr> </span> </h2>
+  
+  <div class="grid grid-cols-3 gap-10 min-h-[20vh]">
 
     {% for item in page.price-cards %}
 
-    <div>
       {% include price-cards.html %}
-    </div>
      
     {% endfor %}
-    
+
   </div>
 </section>

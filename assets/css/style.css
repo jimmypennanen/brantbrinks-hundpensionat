@@ -410,6 +410,9 @@ video {
 .top-0 {
   top: 0px;
 }
+.z-10 {
+  z-index: 10;
+}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -435,6 +438,12 @@ video {
 .mr-3 {
   margin-right: 0.75rem;
 }
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+.ml-5 {
+  margin-left: 1.25rem;
+}
 .block {
   display: block;
 }
@@ -453,11 +462,38 @@ video {
 .min-h-60 {
   min-height: 60vh;
 }
+.min-h-\[25\%\] {
+  min-height: 25%;
+}
+.min-h-50 {
+  min-height: 50vh;
+}
+.min-h-\[20vh\] {
+  min-height: 20vh;
+}
+.w-\[30\%\] {
+  width: 30%;
+}
+.min-w-\[30\%\] {
+  min-width: 30%;
+}
+.min-w-\[40\%\] {
+  min-width: 40%;
+}
+.min-w-\[50\%\] {
+  min-width: 50%;
+}
 .max-w-screen-2xl {
   max-width: 1536px;
 }
 .max-w-md {
   max-width: 28rem;
+}
+.max-w-\[20\%\] {
+  max-width: 20%;
+}
+.max-w-\[30\%\] {
+  max-width: 30%;
 }
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -465,11 +501,20 @@ video {
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 .flex-row {
   flex-direction: row;
 }
 .flex-col {
   flex-direction: column;
+}
+.place-items-center {
+  place-items: center;
 }
 .items-end {
   align-items: flex-end;
@@ -477,14 +522,33 @@ video {
 .items-center {
   align-items: center;
 }
+.justify-center {
+  justify-content: center;
+}
 .justify-between {
   justify-content: space-between;
+}
+.justify-items-center {
+  justify-items: center;
+}
+.gap-10 {
+  gap: 2.5rem;
 }
 .self-center {
   align-self: center;
 }
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
 .rounded-tr-\[65\%\] {
   border-top-right-radius: 65%;
+}
+.border {
+  border-width: 1px;
+}
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .bg-blue-color {
   --tw-bg-opacity: 1;
@@ -493,6 +557,10 @@ video {
 .bg-featured-color {
   --tw-bg-opacity: 1;
   background-color: rgb(190 233 232 / var(--tw-bg-opacity));
+}
+.bg-light-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(202 233 255 / var(--tw-bg-opacity));
 }
 .bg-cover {
   background-size: cover;
@@ -533,6 +601,15 @@ video {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+.text-center {
+  text-align: center;
+}
 .font-cursive-text {
   font-family: Dancing Script, cursive;
 }
@@ -550,6 +627,10 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 1;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.2;
 }
 .uppercase {
   text-transform: uppercase;
