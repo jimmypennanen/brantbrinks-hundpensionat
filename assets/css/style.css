@@ -421,9 +421,6 @@ video {
 .mb-4 {
   margin-bottom: 1rem;
 }
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
 .block {
   display: block;
 }
@@ -489,11 +486,11 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.font-big-headings-text {
+.font-cursive-text {
   font-family: Dancing Script, cursive;
 }
-.font-small-headings-text {
-  font-family: Ledger, serif;
+.font-paragraph-text {
+  font-family: Roboto, sans-serif;
 }
 .text-6xl {
   font-size: 3.75rem;
@@ -506,6 +503,12 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 1;
+}
+.font-extralight {
+  font-weight: 200;
+}
+.font-medium {
+  font-weight: 500;
 }
 .uppercase {
   text-transform: uppercase;
