@@ -489,6 +489,9 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.font-big-headings-text {
+  font-family: Dancing Script, cursive;
+}
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -499,10 +502,6 @@ video {
 }
 .text-4xl {
   font-size: 2.25rem;
-  line-height: 1;
-}
-.text-5xl {
-  font-size: 3rem;
   line-height: 1;
 }
 .uppercase {

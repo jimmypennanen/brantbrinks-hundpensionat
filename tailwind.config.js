@@ -23,8 +23,8 @@ module.exports = {
       '9xl': ['8rem', '1'],
     },
     fontFamily: {
-      'small-headings-text': ['Ledger', 'serif;'],
-      'big-headings-text': ['Dancing Script', 'cursive;'],
+      'small-headings-text': ['Ledger', 'serif'],
+      'big-headings-text': ['Dancing Script', 'cursive'],
     },
     extend: {
       colors: {
