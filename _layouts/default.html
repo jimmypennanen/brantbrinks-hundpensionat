@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
 
+<!---------------- This is the include for all the metadata, fonts etc. ---------------->
 {% include head.html %}
 
 </head>
 
 <body>
-
+    <!---------------- This is the nav on the top of every page ---------------->
     {% include site-header-nav.html %}
 
-    {{content}}
+    {{ content }}
 
+    <!---------------- This is the footer on every page ---------------->
     {% include site-footer %}
 
 </body>
