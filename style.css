@@ -12,7 +12,3 @@
 html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
 }
-
-* {
-  border: 1px solid grey;
-}
