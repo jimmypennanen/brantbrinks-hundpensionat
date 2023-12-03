@@ -5,6 +5,23 @@ banner-image:
   position: 50% 5%
   header: Brantbrinks Hundpensionat
   text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate porro quia suscipit non itaque libero veniam earum nesciunt? Sunt nemo beatae, tempore officiis reiciendis voluptas inventore iusto aperiam in numquam!
+price-cards:
+ - dogs: 1 hund
+   week: mån - fre
+   week-price: 350
+   weekend: lör - sön
+   weekend-price: 400
+ - dogs: 2 hundar
+   week: mån - fre
+   week-price: 450
+   weekend: lör - sön
+   weekend-price: 500
+ - dogs: 3 hundar
+   week: mån - fre
+   week-price: 550
+   weekend: lör - sön
+   weekend-price: 600
+  
 seo:
   title: Brantbrinks hundpensionat
   description: "litet, gulligt hundpensionat. precis som hemma"
@@ -15,3 +32,18 @@ seo:
 
 <!---------------- This is the big image-banner on the top of the page ---------------->
 {% include hero-banner.html %}
+
+<section>
+  <h2> Priser </h2>
+  <div>
+
+    {% for item in page.price-cards %}
+
+    <div>
+      {% include price-cards.html %}
+    </div>
+     
+    {% endfor %}
+    
+  </div>
+</section>
