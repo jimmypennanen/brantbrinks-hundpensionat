@@ -30,6 +30,13 @@ module.exports = {
       'soft-tight': ['proxima-soft-condensed', 'ui-sans-serif'],
     },
     extend: {
+      colors: {
+        'blue-color': '#5fa8d3',
+        'featured-color': '#bee9e8',
+        'light-color': '#cae9ff',
+        'dark-color': '#1b4965',
+        'middle-blue-color': '#62b6cb',
+        },
       lineHeight: {
         'tight': '.85',
         'snug': '.95',
@@ -39,6 +46,11 @@ module.exports = {
         '5p': '5%',
         '10p': '10%',
         '15p': '15%',
+        '25p': '25%',
+        '50p': '50%',
+        '75p': '75%',
+        '100p': '100%',
+        '125p': '125%',
       },
       minHeight:{
         '100': '100vh',
