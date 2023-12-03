@@ -490,6 +490,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(95 168 211 / var(--tw-bg-opacity));
 }
+.bg-featured-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 233 232 / var(--tw-bg-opacity));
+}
 .bg-cover {
   background-size: cover;
 }
