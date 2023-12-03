@@ -492,6 +492,9 @@ video {
 .font-paragraph-text {
   font-family: Roboto, sans-serif;
 }
+.font-headings-text {
+  font-family: Lato, sans-serif;
+}
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
