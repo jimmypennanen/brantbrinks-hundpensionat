@@ -1,11 +1,11 @@
 <!---------------- This is the big hero-banner image on the home page ---------------->
-<section class="grid grid-cols-5 bg-cover bg-center text-blue-color " style="background-image: url('{{ page.banner-image.image }}'); background-position:{{ page.banner-image.position }}"> 
+<section class="grid grid-cols-5 bg-cover bg-center text-white" style="background-image: url('{{ page.banner-image.image }}'); background-position:{{ page.banner-image.position }}"> 
 
     <!------ You need the min-h class on the div that's holding the text to give it space to move around ------>
-    <div class="max-w-screen-2xl min-h-60 blurred-background p-15p col-span-2 rounded-tr-[65%]">
+    <div class="max-w-screen-2xl min-h-90 blurred-background p-15p col-span-2 rounded-tr-[65%] self-center">
         <h2 class="max-w-md text-7xl mb-6 font-cursive-text">  {{ page.banner-image.header }} </h2>
         <p class="max-w-md text-2xl font-headings-text">  {{ page.banner-image.text }} </p>
-        <a href="#" class="uppercase font-headings-text bg-blue-color hover:bg-light-color text-light-color hover:text-blue-color py-2 px-7 inline-block mt-6"> Kontakta mig </a>
+        <a href="#" class="uppercase font-headings-text bg-blue-color hover:bg-white text-white hover:text-blue-color py-2 px-7 inline-block mt-6"> Kontakta mig </a>
     </div>
     <div class="min-h-60 col-span-3"></div>
 </section>

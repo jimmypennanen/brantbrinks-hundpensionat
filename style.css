@@ -17,5 +17,5 @@ html {
 .blurred-background {
   background-size: cover;
   backdrop-filter: blur(1px); /* Adjust the blur level as needed */
-  background-color: rgba(95, 168, 211, 0.1) /* Adjust the alpha channel for transparency */
+  background-color: rgba(95, 168, 211, 0.3) /* Adjust the alpha channel for transparency */
 }
