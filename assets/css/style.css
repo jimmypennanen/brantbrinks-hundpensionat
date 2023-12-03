@@ -495,6 +495,10 @@ video {
 .max-w-\[30\%\] {
   max-width: 30%;
 }
+.max-w-fit {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
