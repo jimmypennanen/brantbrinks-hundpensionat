@@ -492,6 +492,9 @@ video {
 .font-big-headings-text {
   font-family: Dancing Script, cursive;
 }
+.font-small-headings-text {
+  font-family: Ledger, serif;
+}
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
