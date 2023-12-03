@@ -421,6 +421,9 @@ video {
 .mb-4 {
   margin-bottom: 1rem;
 }
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
 .block {
   display: block;
 }
@@ -491,6 +494,9 @@ video {
 }
 .font-paragraph-text {
   font-family: Roboto, sans-serif;
+}
+.font-headings-text {
+  font-family: Lato, sans-serif;
 }
 .text-6xl {
   font-size: 3.75rem;
