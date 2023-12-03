@@ -489,11 +489,11 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.font-paragraph-text {
-  font-family: Roboto, sans-serif;
-}
 .font-cursive-text {
   font-family: Dancing Script, cursive;
+}
+.font-paragraph-text {
+  font-family: Roboto, sans-serif;
 }
 .text-6xl {
   font-size: 3.75rem;
