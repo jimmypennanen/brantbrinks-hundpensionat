@@ -410,6 +410,9 @@ video {
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
+.col-span-full {
+  grid-column: 1 / -1;
+}
 .m-\[2\.2rem\] {
   margin: 2.2rem;
 }
@@ -429,6 +432,9 @@ video {
 }
 .ml-auto {
   margin-left: auto;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 .block {
   display: block;
@@ -558,6 +564,9 @@ video {
 }
 .uppercase {
   text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
 }
 .tracking-wide {
   letter-spacing: 0.025em;
