@@ -21,6 +21,7 @@ price-cards:
    week-price: 550
    weekend: lör - sön
    weekend-price: 600
+about-image: /images/hund-1.jpg
 seo:
   title: Brantbrinks hundpensionat
   description: "litet, gulligt hundpensionat. precis som hemma"
@@ -32,6 +33,7 @@ seo:
 <!---------------- This is the big image-banner on the top of the page ---------------->
 {% include hero-banner.html %}
 
+<!---------------- This is the cards with prices ---------------->
 <section class="p-5p text-center bg-light-color">
   <h2 class="uppercase font-cursive-text mb-10"> <span> <hr> </span> Priser <span> <hr> </span> </h2>
   
@@ -44,4 +46,17 @@ seo:
     {% endfor %}
 
   </div>
+</section>
+
+<!---------------- This is the about section ---------------->
+<section class="">
+  <div>
+    <h2> Om </h2>
+  </div>
+  <div class="grid grid-cols-3">
+    <div class="col-span-1"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et.</div>
+    <div class="col-span-2">
+      <img src="{{ page.about-image }}" alt="">
+    </div>
+  </div>  
 </section>

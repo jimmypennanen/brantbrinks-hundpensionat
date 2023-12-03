@@ -422,6 +422,9 @@ video {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -456,6 +459,15 @@ video {
 .grid {
   display: grid;
 }
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+.aspect-portrait {
+  aspect-ratio: 4/5;
+}
+.max-h-20 {
+  max-height: 5rem;
+}
 .min-h-90 {
   min-height: 90vh;
 }
@@ -464,6 +476,9 @@ video {
 }
 .min-h-\[20vh\] {
   min-height: 20vh;
+}
+.min-h-50 {
+  min-height: 50vh;
 }
 .max-w-screen-2xl {
   max-width: 1536px;
