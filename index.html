@@ -6,17 +6,20 @@ banner-image:
   header: Heading som jag ej vet vad
   text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate porro quia suscipit non itaque libero veniam earum nesciunt? Sunt nemo beatae, tempore officiis reiciendis voluptas inventore iusto aperiam in numquam!
 price-cards:
- - dogs: 1 hund
+ - image: https://images.unsplash.com/photo-1561037404-61cd46aa615b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+   dogs: 1 hund
    week: måndag - fredag
    week-price: 350
    weekend: lördag - söndag
    weekend-price: 400
- - dogs: 2 hundar
+ - image: https://images.unsplash.com/photo-1577611612331-845d0e3d77af?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHdvJTIwZG9nc3xlbnwwfHwwfHx8MA%3D%3D
+   dogs: 2 hundar
    week: måndag - fredag
    week-price: 450
    weekend: lördag - söndag
    weekend-price: 500
- - dogs: 3 hundar
+ - image: https://images.unsplash.com/photo-1499938971550-7ad287075e0d?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+   dogs: 3 hundar
    week: måndag - fredag
    week-price: 550
    weekend: lördag - söndag
@@ -34,9 +37,8 @@ seo:
 {% include hero-banner.html %}
 
 <!---------------- This is the cards with prices ---------------->
-<section class="p-5p text-center bg-light-color">
-  <h2 class=" text-xl uppercase font-cursive-text mb-10"> Priser </h2>
-  
+<section class="p-5p text-center bg-light-color text-white">
+  <h2 class=" text-2xl uppercase font-cursive-text mb-10 text-blue-color"> Priser </h2>
   <div class="flex flex-row justify-center gap-10 min-h-[20vh]">
 
     {% for item in page.price-cards %}
@@ -46,9 +48,10 @@ seo:
     {% endfor %}
 
   </div>
-
-  <a href="#" class="uppercase font-headings-text bg-blue-color hover:bg-white text-white hover:text-blue-color py-2 px-7 inline-block mt-6 max-w-fit"> mer info </a>
-
+  <div class="mt-5">
+    <a href="#" class="uppercase font-headings-text bg-blue-color hover:bg-white text-white hover:text-blue-color py-2 px-7 inline-block mt-6 max-w-fit">
+    mer info </a>
+  </div>
 </section>
 
 <!---------------- This is the about section ---------------->
