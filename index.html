@@ -7,19 +7,19 @@ banner-image:
   text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate porro quia suscipit non itaque libero veniam earum nesciunt? Sunt nemo beatae, tempore officiis reiciendis voluptas inventore iusto aperiam in numquam!
 price-cards:
  - dogs: 1 hund
-   week: mån - fre
+   week: måndag - fredag
    week-price: 350
-   weekend: lör - sön
+   weekend: lördag - söndag
    weekend-price: 400
  - dogs: 2 hundar
-   week: mån - fre
+   week: måndag - fredag
    week-price: 450
-   weekend: lör - sön
+   weekend: lördag - söndag
    weekend-price: 500
  - dogs: 3 hundar
-   week: mån - fre
+   week: måndag - fredag
    week-price: 550
-   weekend: lör - sön
+   weekend: lördag - söndag
    weekend-price: 600
 about-image: /images/hund-1.jpg
 seo:
@@ -35,17 +35,20 @@ seo:
 
 <!---------------- This is the cards with prices ---------------->
 <section class="p-5p text-center bg-light-color">
-  <h2 class="uppercase font-cursive-text mb-10"> <span> <hr> </span> Priser <span> <hr> </span> </h2>
+  <h2 class=" text-xl uppercase font-cursive-text mb-10"> Priser </h2>
   
-  <div class="grid grid-cols-3 gap-10 min-h-[20vh]">
+  <div class="flex flex-row justify-center gap-10 min-h-[20vh]">
 
     {% for item in page.price-cards %}
 
       {% include price-cards.html %}
-     
+  
     {% endfor %}
 
   </div>
+
+  <a href="#" class="uppercase font-headings-text bg-blue-color hover:bg-white text-white hover:text-blue-color py-2 px-7 inline-block mt-6 max-w-fit"> mer info </a>
+
 </section>
 
 <!---------------- This is the about section ---------------->
@@ -53,7 +56,7 @@ seo:
   <div>
     <h2> Om </h2>
   </div>
-  <div class="grid grid-cols-3 min-h-60">
+  <div class="grid grid-cols-3 min-h-80">
     <div class="col-span-1"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et.</div>
     <div class="col-span-2 relative">
       <img src="{{ page.about-image }}" alt="" class="absolute inset-0 w-full h-full object-cover object-center">
