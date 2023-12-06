@@ -587,13 +587,13 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(215 227 190 / var(--tw-bg-opacity));
 }
-.bg-green-color {
-  --tw-bg-opacity: 1;
-  background-color: rgb(62 109 60 / var(--tw-bg-opacity));
-}
 .bg-middle-green-color {
   --tw-bg-opacity: 1;
   background-color: rgb(158 183 157 / var(--tw-bg-opacity));
+}
+.bg-green-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(62 109 60 / var(--tw-bg-opacity));
 }
 .bg-cover {
   background-size: cover;
