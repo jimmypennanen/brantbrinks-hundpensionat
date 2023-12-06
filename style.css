@@ -17,10 +17,15 @@ html {
 .blurred-background {
   background-size: cover;
   backdrop-filter: blur(1px); /* Adjust the blur level as needed */
-  background-color: rgba(159, 179, 71, 0.3) /* Adjust the alpha channel for transparency */
+  background-color: rgba(158, 183, 157, 0.4) /* Adjust the alpha channel for transparency */
 }
 
 /*---------------- This is for opacity on nav when scrolling ----------------*/
 .bg-beige-color-opacity {
   background-color: rgba(50, 100, 50, 0.5); /* Set your desired opacity value */
+}
+
+
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
