@@ -29,11 +29,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        'beige-color': '#3E6D3C',
-        'featured-color': '#067146',
-        'light-color': '#D7E3BE',
-        'dark-color': '#28400A',
-        'footer-color': '#9EB79D'
+        'green-color': '#3E6D3C',
+        'light-green-color': '#D7E3BE',
+        'middle-green-color': '#9EB79D'
         },
       lineHeight: {
         'tight': '.85',

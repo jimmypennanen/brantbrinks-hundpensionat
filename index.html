@@ -26,19 +26,19 @@ price-cards:
    weekend-price: 600
 about-image: /images/hund-1.jpg
 why-us:
- - image: /images/hund-3.jpg
+ - icon: fa-solid fa-house-chimney
    heading: Hög kvalitet
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni asperiores quasi fuga ut accusamus beatae. Numquam, recusandae! Maiores, voluptate pariatur eveniet cum sit sint repellat necessitatibus quidem ea ducimus!
    alt: 
- - image: /images/hund-2.jpg
+ - icon: fa-solid fa-paw
    heading: Trygghet för din hund
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni asperiores quasi fuga ut accusamus beatae. Numquam, recusandae! Maiores, voluptate pariatur eveniet cum sit sint repellat necessitatibus quidem ea ducimus!
    alt: 
- - image: /images/hund-4.jpg
+ - icon: fa-solid fa-dog
    heading: Långa promenader
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni asperiores quasi fuga ut accusamus beatae. Numquam, recusandae! Maiores, voluptate pariatur eveniet cum sit sint repellat necessitatibus quidem ea ducimus!
    alt: 
- - image: /images/hund-1.jpg
+ - icon: fa-solid fa-bone
    heading: Bra miljö
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni asperiores quasi fuga ut accusamus beatae. Numquam, recusandae! Maiores, voluptate pariatur eveniet cum sit sint repellat necessitatibus quidem ea ducimus!
    alt: 
@@ -72,7 +72,7 @@ seo:
 </section>
 
 <!---------------- This is the about section ---------------->
-<section class="bg-light-color border-b-4 border-t-4">
+<section class="bg-light-green-color border-b-4 border-t-4">
   <h2 class="text-4xl p-5 justify-center flex uppercase"> Om pensionatet </h2>
   <div class="grid grid-cols-3 min-h-80 text-dark-color">
     <div class="col-span-2 justify-center flex flex-col items-center"> 
@@ -85,11 +85,11 @@ seo:
 
   <div class="flex flex-row gap-10">
   {% for item in page.why-us %}
-  <div class="flex flex-col items-center">
-    <div class="max-w-sm">
-      <img src=" {{ item.image }} " alt=" {{ item.alt }} " class="rounded-full border-white border-3 h-64 w-64 object-cover">
+  <div class="flex flex-col items-center p-8 text-center">
+    <div class="text-4xl p-5 my-5">
+      <i class="{{ item.icon }} border-green-color border-2 p-10 rounded-full text-green-color"></i>  <!-- This is the font awesome icon -->
     </div>
-    <h3 class="font-cursive-text text-2xl"> {{ item.heading }} </h3>
+    <h3 class="font-cursive-text text-2xl mb-2"> {{ item.heading }} </h3>
     <p> {{ item.description }} </p>
   </div>
   {% endfor %}
