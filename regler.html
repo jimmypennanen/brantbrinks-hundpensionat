@@ -1,0 +1,84 @@
+---
+layout: default
+faqs:
+ - question: Sitter hundarna inburade hela dagarna?
+   answer: Nej, självklart inte. Hundarna går både promenader, blir rastade och har möjlighet till inhängning på tomten under sommarhalvåret.
+ - question: Hamnar hundarna ofta i bråk med varandra?
+   answer: Jag tar bara in hundar som jag tror kan passa tillsammans för att göra det till den mest trivsamma miljö för hundarna som bor på pensionatet.
+ - question: Måste min hund vara vaccinerad?
+   answer: För att kunna vara i närheten av de andra hundarna på pensionatet så bör din hund vara vaccinerad mot bland annat kennelhosta.
+ - question: När kan jag lämna min hund?
+   answer: Det avtalar vi på telefon och jag uppskattar om tiderna vi sagt hålls. Kom gärna ganska precis till avsatt tid.
+ - question: Vad händer om jag blir försenad vid upphämtning?
+   answer: När du blir försenad måste jag dessvärre lägga på en förseningsavgift för att kunna ha plats för de nya hundarna som kommer.
+ - question: Hur många promenader får min hund gå?
+   answer: Minst två promenader men också luftning utomhus för att göra ifrån sig under dagarna utöver det. På sommaren finns möjlighet att vara i inhängning på tomten.
+ - question: Vad händer om min hund blir sjuk?
+   answer: Jag meddelar givetvis er på telefon och besöker vetrinär där ni har försäkring eller till er bekostnad.
+ - question: Hur länge kan min hund bo på pensionatet i sträck?
+   answer: Det avtalar vi tillsammans på telefon och finner en passande plan tillsammans.
+faqs-parttwo:
+ - image: /images/hund-2.jpg
+   title: Jag bryr mig om din hund och dens välbefinnande.
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quas sunt pariatur! Eius laudantium cumque voluptatum facere quos dolorem sint similique quibusdam velit, minima, nulla est neque cupiditate rem sequi?
+   position: 50% 20%
+ - image: /images/hund-2.jpg
+   title: Jag bryr mig om din hund och dens välbefinnande.
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quas sunt pariatur! Eius laudantium cumque voluptatum facere quos dolorem sint similique quibusdam velit, minima, nulla est neque cupiditate rem sequi?
+   position: 50% 20%
+ - image: /images/hund-2.jpg
+   title: Jag bryr mig om din hund och dens välbefinnande.
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quas sunt pariatur! Eius laudantium cumque voluptatum facere quos dolorem sint similique quibusdam velit, minima, nulla est neque cupiditate rem sequi?
+   position: 50% 20%
+scroll-banner-image:
+  image: /images/hund-2.jpg
+  position: 50% 5%
+  heading: Marita är bäst!
+  sub-heading: Lorem ipsum dolor sit amet consectetur.
+---         
+<!--------------------------- This is the grid with text and image --------------------------->
+<section>
+  <div class="grid grid-cols-5">
+    {% for item in page.faqs-parttwo %}
+      {% if forloop.index == 1 or forloop.index == 3 %}
+        <div class="col-span-3 min-h-60 bg-fixed bg-cover bg-center bg-green-color" style="background-image: url('{{ item.image }}'); background-position:{{ item.position }}">
+        </div>
+        <div class="col-span-2 justify-center items-center flex flex-col bg-middle-green-color rounded-full"> 
+          <h2 class="uppercase text-2xl text-green-color m-5"> {{ item.title }} </h2>
+          <p class="max-w-xl text-green-color"> {{ item.description }} </p>
+        </div>
+      {% else %}
+        <div class="col-span-2 justify-center items-center flex flex-col bg-middle-green-color rounded-full"> 
+          <h2 class="uppercase text-2xl text-green-color m-5"> {{ item.title }} </h2>
+          <p class="max-w-xl text-green-color"> {{ item.description }} </p>
+        </div>
+        <div class="col-span-3 min-h-60 bg-fixed bg-cover bg-center bg-green-color" style="background-image: url('{{ item.image }}'); background-position:{{ item.position }}">
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<!--------------------------- Faq's --------------------------->
+<section class="p-15p text-center bg-middle-green-color min-h-screen">
+  <div>
+      <h3 class="font-cursive-text text-4xl uppercase text-green-color mb-8"> Faq's </h3>
+  
+      {% for item in page.faqs %}
+      <div class="flex justify-between border-t-2 last:border-b-2 py-8 uppercase text-white">
+          <h4 class="m-0 text-xl"> {{ item.question }} </h4>
+          <p class="m-0 max-w-lg"> {{ item.answer }} </p>
+      </div>
+      {% endfor %}
+      
+  </div>
+</section>
+
+<!--------------------------- This is the scrolling image --------------------------->
+<section class="min-h-70 bg-fixed flex items-center justify-center bg-cover bg-center" style="background-image: url('{{ page.scroll-banner-image.image }}'); background-position:{{ page.scroll-banner-image.position }}">
+  <div class="md:w-[50%] p-8 text-center">
+    <h2 class=""> {{ page.scroll-banner.heading}} </h2>
+    <h3 class=""> {{ page.scroll-banner.sub-heading }} </h3>
+  </div>
+</section>  
+
