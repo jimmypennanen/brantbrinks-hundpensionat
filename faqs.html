@@ -1,0 +1,54 @@
+---
+layout: default
+faqs:
+ - question:
+   answer:
+ - question:
+   answer:
+ - question:
+   answer:
+ - question:
+   answer:
+scroll-banner-image:
+  image: /images/hund-2.jpg
+  position: 50% 5%
+  heading: Marita är bäst!
+  sub-heading: Lorem ipsum dolor sit amet consectetur.
+---         
+
+<!--------------------------- Faq's --------------------------->
+<section class="p-5p font-cursive-text text-center bg-middle-green-color min-h-screen border-b-4 border-b-green-color">
+    <div>
+        <h3 class="text-4xl uppercase text-green-color mb-8"> Faq's </h3>
+    
+        {% for item in page.faqs %}
+        <div class="flex justify-between border-t-2 last:border-b-2 py-8 uppercase">
+            <h4 class="m-0"> {{ item.question }} </h4>
+            <p class="m-0"> {{ item.answer }} </p>
+        </div>
+        {% endfor %}
+        
+    </div>
+</section>
+
+<section class="min-h-70 bg-fixed flex items-center justify-center bg-cover bg-center" style="background-image: url('{{ page.scroll-banner-image.image }}'); background-position:{{ page.scroll-banner-image.position }}">
+    <div class="md:w-[50%]  p-8 text-center">
+      <h2 class="big-bold"> {{ page.scroll-banner.heading}} </h2>
+      <h3 class="not-bold"> {{ page.scroll-banner.sub-heading }} </h3>
+    </div>
+  </section>  
+
+<!--------------------------- Faq's --------------------------->
+<section class="p-5p font-cursive-text text-center bg-middle-green-color min-h-screen border-b-4 border-b-green-color">
+    <div>
+        <h3 class="text-4xl uppercase text-green-color mb-8"> Faq's </h3>
+    
+        {% for item in page.faqs %}
+        <div class="flex justify-between border-t-2 last:border-b-2 py-8 uppercase">
+            <h4 class="m-0"> {{ item.question }} </h4>
+            <p class="m-0"> {{ item.answer }} </p>
+        </div>
+        {% endfor %}
+        
+    </div>
+</section>
