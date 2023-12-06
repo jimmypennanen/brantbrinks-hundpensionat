@@ -24,7 +24,7 @@ price-cards:
    week-price: 550
    weekend: lördag - söndag
    weekend-price: 600
-about-image: /images/hund-1.jpg
+about-image: /images/hund-3.jpg
 why-us:
  - icon: fa-solid fa-house-chimney
    heading: Hög kvalitet
@@ -54,8 +54,8 @@ seo:
 {% include hero-banner.html %}
 
 <!---------------- This is the cards with prices ---------------->
-<section class="p-5p text-center text-white">
-  <h2 class=" text-2xl uppercase font-cursive-text mb-10 text-dark-color"> Priser </h2>
+<section class="p-5p text-center text-white bg-light-green-color">
+  <h2 class=" text-4xl uppercase font-cursive-text mb-10 text-green-color"> Priser </h2>
   <div class="flex flex-row justify-center gap-10 min-h-[20vh]">
 
     {% for item in page.price-cards %}
@@ -66,20 +66,21 @@ seo:
 
   </div>
   <div class="mt-5">
-    <a href="#" class="uppercase font-headings-text bg-dark-color hover:bg-white text-white hover:text-featured-color py-2 px-7 inline-block mt-6">
+    <a href="#" class="uppercase font-headings-text border-middle-green-color border-2 bg-middle-green-color hover:bg-light-green-color text-green-color hover:text-green-color hover:border-green-color hover:border-2 py-2 px-7 inline-block mt-6">
     mer info </a>
   </div>
 </section>
 
 <!---------------- This is the about section ---------------->
-<section class="bg-light-green-color border-b-4 border-t-4">
-  <h2 class="text-4xl p-5 justify-center flex uppercase"> Om pensionatet </h2>
+<section class="bg-middle-green-color p-5">
+  <h2 class="text-4xl p-5 justify-center flex uppercase text-white font-cursive-text"> Om pensionatet </h2>
   <div class="grid grid-cols-3 min-h-80 text-dark-color">
-    <div class="col-span-2 justify-center flex flex-col items-center"> 
-      <p class="max-w-sm border-white border-2 p-5"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tempore incidunt, ex aspernatur unde facilis ipsam, illum itaque rerum perspiciatis ratione ipsa sapiente! Pariatur et, consequuntur vero ipsam mollitia cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore ipsam sed dolor voluptatum ratione eaque porro blanditiis omnis! Ullam reiciendis facilis iusto, cupiditate eligendi et quod obcaecati accusantium numquam. </p>
+    <div class="col-span-2 justify-center flex flex-col items-center text-white"> 
+      <p class="p-5 leading-6 m-5  mb-0"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tempore incidunt, ex aspernatur unde facilis ipsam, illum itaque rerum perspiciatis ratione ipsa sapiente! Pariatur et, consequuntur vero ipsam mollitia cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore ipsam sed dolor voluptatum ratione eaque porro blanditiis omnis! Ullam reiciendis facilis iusto, cupiditate eligendi et quod obcaecati accusantium numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque cumque rem aliquid excepturi animi corporis quae sapiente quis non? Fugit enim animi quo similique! Expedita aspernatur officiis nisi saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum nemo aspernatur saepe reiciendis adipisci necessitatibus reprehenderit veritatis sapiente quidem dolores obcaecati, explicabo vero fuga cum earum? Asperiores, eos facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, non, illum error cupiditate perferendis consequuntur itaque rerum at in aperiam quidem, veritatis cum accusamus deserunt a sint quod quas quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam optio totam voluptatem aut numquam quam, nobis consequatur? Dolorum maxime fuga voluptatem eaque beatae voluptate dolorem corporis iure, amet aliquid et!</p>
+      <p class="p-5 leading-6 m-5 mt-0"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tempore incidunt, ex aspernatur unde facilis ipsam, illum itaque rerum perspiciatis ratione ipsa sapiente! Pariatur et, consequuntur vero ipsam mollitia cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore ipsam sed dolor voluptatum ratione eaque porro blanditiis omnis! Ullam reiciendis facilis iusto, cupiditate eligendi et quod obcaecati accusantium numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque cumque rem aliquid excepturi animi corporis quae sapiente quis non? Fugit enim animi quo similique! Expedita aspernatur officiis nisi saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum nemo aspernatur saepe reiciendis adipisci necessitatibus reprehenderit veritatis sapiente quidem dolores obcaecati, explicabo vero fuga cum earum? Asperiores, eos facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, non, illum error cupiditate perferendis consequuntur itaque rerum at in aperiam quidem, veritatis cum accusamus deserunt a sint quod quas quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam optio totam voluptatem aut numquam quam, nobis consequatur? Dolorum maxime fuga voluptatem eaque beatae voluptate dolorem corporis iure, amet aliquid et!</p>
     </div>
     <div class="col-span-1 relative">
-      <img src="{{ page.about-image }}" alt="" class="absolute inset-0 w-full h-full object-cover object-center">
+      <img src="{{ page.about-image }}" alt="" class="absolute inset-0 w-full h-full object-cover object-center rounded-full mt-0">
     </div>
   </div>  
 
@@ -87,10 +88,10 @@ seo:
   {% for item in page.why-us %}
   <div class="flex flex-col items-center p-8 text-center">
     <div class="text-4xl p-5 my-5">
-      <i class="{{ item.icon }} border-green-color border-2 p-10 rounded-full text-green-color"></i>  <!-- This is the font awesome icon -->
+      <i class="{{ item.icon }} border-white border-2 p-10 rounded-full text-white"></i>  <!-- This is the font awesome icon -->
     </div>
-    <h3 class="font-cursive-text text-2xl mb-2"> {{ item.heading }} </h3>
-    <p> {{ item.description }} </p>
+    <h3 class="font-cursive-text text-4xl mb-2 text-white"> {{ item.heading }} </h3>
+    <p class="text-white mt-4"> {{ item.description }} </p>
   </div>
   {% endfor %}
   </div>
