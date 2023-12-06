@@ -1,6 +1,32 @@
 ---
 layout: default
+banner-image:
+  image: /images/hund-4.jpg
+  position: 50% 5%
+  header: Heading som jag ej vet vad
+  text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate porro quia suscipit non itaque libero veniam earum nesciunt? Sunt nemo beatae, tempore officiis reiciendis voluptas inventore iusto aperiam in numquam!
+price-cards:
+ - image: https://images.unsplash.com/photo-1665854643349-6ef95bbe21f2?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+   dogs: 1 hund
+   week: måndag - fredag
+   week-price: 350
+   weekend: lördag - söndag
+   weekend-price: 400
+ - image: https://images.unsplash.com/photo-1525512953-2530e89e5843?q=80&w=1774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+   dogs: 2 hundar
+   week: måndag - fredag
+   week-price: 450
+   weekend: lördag - söndag
+   weekend-price: 500
+ - image: https://images.unsplash.com/photo-1621157213045-28d209de0e7a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+   dogs: 3 hundar
+   week: måndag - fredag
+   week-price: 550
+   weekend: lördag - söndag
+   weekend-price: 600
 ---
+
+{% include hero-banner.html %}
 
 <section class="p-5p text-center text-white">
     <h2 class=" text-2xl uppercase font-cursive-text mb-10 text-dark-color"> Priser </h2>
@@ -26,12 +52,12 @@ layout: default
         </div>
     
         <div class=""> 
-            <h2 class="text-2xl"> din hund i fokus. </h2>
-            <ul class="list-disc">
-                <li> Priserna gäller per påbörjat dygn </li>
-                <li> 150 kr tillägg för afton och röda dagar </li>
-                <li> Vid fler än en hund från samma familj gäller ovanstående prislista under förutsättning att hundarna kan vistas i samma box. </li>
-                <li> Betalning sker i förskott  7 dagar innan vistelsen  på företagets plusgirokonto nordea 570235-2 uppge hundens namn samt vistelsetid  </li>
+            <h2 class="text-2xl pl-5p"> din hund i fokus. </h2>
+            <ul class="list-disc p-5p">
+                <li class="mb-3"> Priserna gäller per påbörjat dygn </li>
+                <li class="mb-3"> 150 kr tillägg för afton och röda dagar </li>
+                <li class="mb-3"> Vid fler än en hund från samma familj gäller ovanstående prislista under förutsättning att hundarna kan vistas i samma box. </li>
+                <li class="mb-3"> Betalning sker i förskott  7 dagar innan vistelsen  på företagets plusgirokonto nordea 570235-2 uppge hundens namn samt vistelsetid  </li>
             </ul> 
                
                 
