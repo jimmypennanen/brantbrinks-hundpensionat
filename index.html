@@ -54,7 +54,7 @@ seo:
 {% include hero-banner.html %}
 
 <!---------------- This is the cards with prices ---------------->
-<section class="p-5p text-center bg-featured-color text-white">
+<section class="p-5p text-center text-white">
   <h2 class=" text-2xl uppercase font-cursive-text mb-10 text-dark-color"> Priser </h2>
   <div class="flex flex-row justify-center gap-10 min-h-[20vh]">
 
@@ -83,11 +83,11 @@ seo:
     </div>
   </div>  
 
-  <div class="flex flex-row justify-center gap-10">
+  <div class="flex flex-row gap-10">
   {% for item in page.why-us %}
-  <div class="flex flex-col">
+  <div class="flex flex-col items-center">
     <div class="max-w-sm">
-      <img src=" {{ item.image }} " alt=" {{ item.alt }} " class="rounded-full border-white border-3 h-52">
+      <img src=" {{ item.image }} " alt=" {{ item.alt }} " class="rounded-full border-white border-3 h-64 w-64 object-cover">
     </div>
     <h3 class="font-cursive-text text-2xl"> {{ item.heading }} </h3>
     <p> {{ item.description }} </p>
