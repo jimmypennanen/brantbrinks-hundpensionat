@@ -1,15 +1,42 @@
 ---
 layout: default
 ---
-<section class="grid grid-cols-2 p-5p">
-    <div class="rounded-[100%] bg-cover bg-center pb-100p" style="background-image: url('/images/hund-2.jpg'); background-position:{{ page.banner-image.position }}"> 
+
+<section class="p-5p text-center text-white">
+    <h2 class=" text-2xl uppercase font-cursive-text mb-10 text-dark-color"> Priser </h2>
+    <div class="flex flex-row justify-center gap-10 min-h-[20vh]">
+  
+      {% for item in page.price-cards %}
+  
+        {% include price-cards.html %}
+    
+      {% endfor %}
+  
     </div>
-    <div> 
-        <h2> din hund i fokus. </h2>
-        <p> Priserna gäller per påbörjat dygn
-            150 kr tillägg för afton och röda dagar
-            Vid fler än en hund från samma familj gäller ovanstående prislista under förutsättning att hundarna kan vistas i samma box.
-            Betalning sker i förskott  7 dagar innan vistelsen  på företagets plusgirokonto nordea 570235-2 uppge hundens namn samt vistelsetid </p>
+    <div class="mt-5">
+      <a href="#" class="uppercase font-headings-text bg-dark-color hover:bg-white text-white hover:text-featured-color py-2 px-7 inline-block mt-6">
+      mer info </a>
+    </div>
+  </section>
+  
+
+<section class="p-5p">
+    <div class="grid grid-cols-2 px-5p min-h-50 items-center">
+        <div class="rounded-full aspect-square bg-cover bg-center w-[85%] p-5p" style="background-image: url('/images/hund-2.jpg'); background-position:{{ page.banner-image.position }}"> 
+        </div>
+    
+        <div class=""> 
+            <h2 class="text-2xl"> din hund i fokus. </h2>
+            <ul class="list-disc">
+                <li> Priserna gäller per påbörjat dygn </li>
+                <li> 150 kr tillägg för afton och röda dagar </li>
+                <li> Vid fler än en hund från samma familj gäller ovanstående prislista under förutsättning att hundarna kan vistas i samma box. </li>
+                <li> Betalning sker i förskott  7 dagar innan vistelsen  på företagets plusgirokonto nordea 570235-2 uppge hundens namn samt vistelsetid  </li>
+            </ul> 
+               
+                
+               
+        </div>
     </div>
 </section>
 
