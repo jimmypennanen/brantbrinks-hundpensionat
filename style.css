@@ -21,11 +21,11 @@ html {
 }
 
 /*---------------- This is for opacity on nav when scrolling ----------------*/
-.bg-beige-color-opacity {
+.bg-green-color-opacity {
   background-color: rgba(50, 100, 50, 0.5); /* Set your desired opacity value */
 }
 
-
+/*---------------- This is for the 'förhållningsregler' section ----------------*/
 .box-shadow {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
