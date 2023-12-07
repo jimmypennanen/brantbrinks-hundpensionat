@@ -71,10 +71,10 @@ scroll-banner-image:
   <div class="max-screen-2xl mx-auto">
       <h3 class="font-cursive-text text-4xl uppercase text-green-color mb-8"> Faq's </h3>
   
-      {% for item in page.data.faqs %}
+      {% for item in site.data.faqs %}
       <div class="flex justify-between border-t-2 last:border-b-2 py-8 uppercase text-white">
-          <h4 class="m-0 text-xl"> {{ faqs.question }} </h4>
-          <p class="m-0 max-w-lg"> {{ faqs.answer }} </p>
+          <h4 class="m-0 text-xl"> {{ item.question }} </h4>
+          <p class="m-0 max-w-lg"> {{ item.answer }} </p>
       </div>
       {% endfor %}
       
