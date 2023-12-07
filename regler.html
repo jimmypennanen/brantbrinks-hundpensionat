@@ -37,7 +37,7 @@ scroll-banner:
   sub-heading: Lorem ipsum dolor sit amet consectetur.
 ---         
 <!--------------------------- This is the grid with text and image --------------------------->
-<section class="min-h-60 bg-fixed bg-cover bg-center" style="background-image: url('{{ page.banner.image }}'); background-position:{{ page.banner.position }}">
+<section class="min-h-90 bg-fixed bg-cover bg-center" style="background-image: url('{{ page.banner.image }}'); background-position:{{ page.banner.position }}">
   <div class="grid grid-cols-5">
     {% for item in page.faqs-parttwo %}
     <div class="col-span-2 justify-center items-center text-center flex flex-col bg-middle-green-color rounded-full m-5"> 
@@ -74,7 +74,7 @@ scroll-banner:
 </section> -->
 
 <!--------------------------- Faq's --------------------------->
-<section class="p-15p text-center bg-middle-green-color">
+<!-- <section class="p-15p text-center bg-middle-green-color">
   <div class="max-screen-2xl mx-auto">
       <h3 class="font-cursive-text text-4xl uppercase text-green-color mb-8"> Faq's </h3>
   
@@ -86,26 +86,19 @@ scroll-banner:
       {% endfor %}
       
   </div>
-</section>
-
-<!-- det här är bara en test -->
-<!-- <section class="p-15p text-center bg-middle-green-color min-h-screen">
-  <div x-data="{ openTab: 0 }">
-    <h3 class="font-cursive-text text-4xl uppercase text-green-color mb-8"> Faq's </h3>
-
-    {% for item in page.faqs %}
-    <div x-show="openTab === {{ loop.index }}">
-      <div class="flex justify-between border-t-2 last:border-b-2 py-8 uppercase text-white cursor-pointer"
-           @click="openTab = (openTab === {{ loop.index }} ? 0 : {{ loop.index }})">
-        <h4 class="m-0 text-xl"> {{ item.question }} </h4>
-      </div>
-      <p class="m-0 max-w-lg" x-show="openTab === {{ loop.index }}"> {{ item.answer }} </p>
-    </div>
-    {% endfor %}
-  </div>
 </section> -->
 
-<!--------------------------- This is the part with licenser and stuff --------------------------->
+<!-- Tinas -->
+<!-- Frequently Asked Questions -->
+<section class="p-5p bg-white">
+  <h3 class="font-cursive-text text-4xl uppercase text-green-color mb-16 justify-center items-center flex"> Faq's </h3>
+  <div class="max-w-screen-xl mx-auto border-middle-green-color border-2 p-5p">
+
+      {% include accordion.html  accordion-source=site.data.faqs %}
+
+  </div>
+</section>
+<!--------------------------- This is the part with licenser and rules --------------------------->
 <section class="p-5p bg-middle-green-color text-green-color">
   <h2 class="uppercase text-4xl font-cursive-text justify-center items-center flex mb-5p"> Förhållningsregler </h2>
   <div class="grid grid-cols-4 gap-10">
