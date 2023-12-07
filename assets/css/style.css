@@ -730,11 +730,11 @@ video {
 .pb-0 {
   padding-bottom: 0px;
 }
-.pl-5p {
-  padding-left: 5%;
-}
 .pb-5 {
   padding-bottom: 1.25rem;
+}
+.pl-5p {
+  padding-left: 5%;
 }
 .text-center {
   text-align: center;
@@ -837,10 +837,6 @@ html {
 .hover\:bg-light-green-color:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(215 227 190 / var(--tw-bg-opacity));
-}
-.hover\:bg-white:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
