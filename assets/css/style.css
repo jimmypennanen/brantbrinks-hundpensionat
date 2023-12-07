@@ -443,9 +443,6 @@ video {
 .m-0 {
   margin: 0px;
 }
-.m-auto {
-  margin: auto;
-}
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -605,12 +602,6 @@ video {
 .justify-between {
   justify-content: space-between;
 }
-.justify-around {
-  justify-content: space-around;
-}
-.justify-items-center {
-  justify-items: center;
-}
 .gap-10 {
   gap: 2.5rem;
 }
@@ -656,9 +647,6 @@ video {
 .bg-light-green-color {
   --tw-bg-opacity: 1;
   background-color: rgb(215 227 190 / var(--tw-bg-opacity));
-}
-.bg-opacity-5 {
-  --tw-bg-opacity: 0.05;
 }
 .bg-cover {
   background-size: cover;
