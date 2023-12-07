@@ -5,21 +5,24 @@ banner-image:
   position: 50% 5%
   header: Heading som jag ej vet vad
   text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate porro quia suscipit non itaque libero veniam earum nesciunt? Sunt nemo beatae, tempore officiis reiciendis voluptas inventore iusto aperiam in numquam!
-price-cards:
+price-grid:
  - image: https://images.unsplash.com/photo-1665854643349-6ef95bbe21f2?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
    dogs: 1 hund
+   description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus velit ex sit inventore minima iusto cumque ab error ea, minus dolor esse repellat eius atque quod architecto quae explicabo tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, inventore dignissimos est at voluptatum pariatur alias! Eligendi quas perspiciatis expedita, inventore repellendus natus debitis tempore voluptate delectus eos? Tenetur, magnam?
    week: måndag - fredag
    week-price: 350
    weekend: lördag - söndag
    weekend-price: 400
  - image: https://images.unsplash.com/photo-1525512953-2530e89e5843?q=80&w=1774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
    dogs: 2 hundar
+   description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus velit ex sit inventore minima iusto cumque ab error ea, minus dolor esse repellat eius atque quod architecto quae explicabo tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, inventore dignissimos est at voluptatum pariatur alias! Eligendi quas perspiciatis expedita, inventore repellendus natus debitis tempore voluptate delectus eos? Tenetur, magnam?
    week: måndag - fredag
    week-price: 450
    weekend: lördag - söndag
    weekend-price: 500
  - image: https://images.unsplash.com/photo-1621157213045-28d209de0e7a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
    dogs: 3 hundar
+   description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus velit ex sit inventore minima iusto cumque ab error ea, minus dolor esse repellat eius atque quod architecto quae explicabo tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, inventore dignissimos est at voluptatum pariatur alias! Eligendi quas perspiciatis expedita, inventore repellendus natus debitis tempore voluptate delectus eos? Tenetur, magnam?
    week: måndag - fredag
    week-price: 550
    weekend: lördag - söndag
@@ -28,24 +31,29 @@ price-cards:
 
 {% include hero-banner.html %}
 
-<section class="p-5p text-center text-white">
-    <h2 class=" text-2xl uppercase font-cursive-text mb-10 text-dark-color"> Priser </h2>
-    <div class="flex flex-row justify-center gap-10 min-h-[20vh]">
-  
-      {% for item in page.price-cards %}
-  
-        {% include price-cards.html %}
-    
-      {% endfor %}
-  
-    </div>
-    <div class="mt-5">
-      <a href="#" class="uppercase font-headings-text bg-dark-color hover:bg-white text-white hover:text-featured-color py-2 px-7 inline-block mt-6">
-      mer info </a>
-    </div>
-  </section>
-  
+<!---------------- This is price info ---------------->
+<section class="p-5p text-center text-white bg-middle-green-color">
+    <h2 class=" text-2xl uppercase font-cursive-text mb-10 text-green-color"> Priser </h2>
 
+   
+     
+        {% for item in page.price-grid %}
+        <div class="flex {% cycle 'flex-row','flex-row-reverse' %} ">
+            <div class="min-h-50 bg-cover bg-center basis-1/2" style="background-image: url('{{ item.image }}'); background-position:{{ page.banner-image.position }}" >
+            </div>
+            <div class=" border-2 border-white min-h-50 flex flex-col justify-center basis-1/2 p-5p">
+                <h2 class="text-3xl pb-10"> {{ item.dogs }} </h2>
+                <p class="pb-5"> {{ item.description }} </p>
+                <p class="pb-3"> {{ item.week }} <span class="ml-5"> {{ item.week-price }} kr </span>  </p>
+                <p class=""> {{ item.weekend }} <span class="ml-5"> {{ item.weekend-price }} kr  </span> </p>
+            </div>
+        </div>
+        {% endfor %}
+            
+   
+  </section>
+
+<!---------------- This is additional price info ---------------->
 <section class="p-5p">
     <div class="grid grid-cols-2 px-5p min-h-50 items-center">
         <div class="rounded-full aspect-square bg-cover bg-center w-[85%] p-5p" style="background-image: url('/images/hund-2.jpg'); background-position:{{ page.banner-image.position }}"> 
