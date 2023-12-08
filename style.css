@@ -7,10 +7,17 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom CSS */
 
+/* Custom CSS */
 html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*---------------- This is the blurry part of the hero-banner ----------------*/
@@ -29,3 +36,77 @@ html {
 .box-shadow {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
+
+/*---------------- This is the slider image section ----------------*/
+.slider-section {
+  overflow: hidden;
+}
+
+.slides {
+  margin: 32px auto;
+}
+
+/* This changes the color etc for the text not in focus */
+/* .slider-section .slick-slide {
+  padding: 24px 0px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3b54b8;
+} */
+
+.slick-slide:not(.slick-current) {
+  opacity: 0.2;
+}
+/* This is the text that's in focus */
+/* .slick-current {
+  background-color: orange;
+  color: black !important;
+} */
+
+/* .bottom-slider .slick-slide {
+  margin-block: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+} */
+
+/* This is the images itself and the margin between them */
+.slick-slide {
+  background-color: #D7E3BE;
+  color: white;
+  margin: 0 5px;
+}
+
+.slick-dots li button:before {
+  color: #c0eee4;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+/* .slick-dots li.slick-active button:before,
+.slick-dots li button:hover::before,
+.slick-dots li button:focus::before {
+  color: #D7E3BE;
+  opacity: 1;
+} */
+
+/* .slick-next,
+.slick-prev {
+  width: fit-content;
+  height: auto;
+} */
+
+/* .slick-next:before,
+.slick-prev:before {
+  font-size: 2.5rem;
+  opacity: 0.5;
+  color: #D7E3BE; } */
+
+/* .slick-next {
+  right: -40px;
+} */
+
+/* .slick-prev {
+  left: -40px;
+} */
