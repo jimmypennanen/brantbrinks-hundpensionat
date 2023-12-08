@@ -5,15 +5,15 @@ banner:
    position: 50% 0%
 featured-text:
  - image: /images/hund-2.jpg
-   title: Jag bryr mig om din hund och dens välbefinnande.
+   title: Med din hund i fokus
    description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quas sunt pariatur! Eius laudantium cumque voluptatum facere quos dolorem sint similique quibusdam velit, minima, nulla est neque cupiditate rem sequi?
    position: 50% 0%
  - image: /images/hund-3.jpg
    title: Jag bryr mig om din hund och dens välbefinnande.
-   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quas sunt pariatur! Eius laudantium cumque voluptatum facere quos dolorem sint similique quibusdam velit, minima, nulla est neque cupiditate rem sequi?
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quas sunt pariatur! Eius laudantium cumque voluptatum facere quos dolorem sint similique quibusdam velit, minima, nulla est neque cupiditate rem sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam culpa placeat ut distinctio soluta accusantium aperiam consequuntur eos amet eveniet? Earum accusantium dignissimos tenetur error cum maiores ut incidunt sequi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nesciunt commodi cupiditate expedita, labore deleniti reiciendis autem doloribus explicabo nisi blanditiis alias non ipsam aspernatur nihil, architecto maiores. Laudantium, cupiditate.
    position: 50% 0%
  - image: /images/hund-4.jpg
-   title: Jag bryr mig om din hund och dens välbefinnande.
+   title: Hos mig har hunden det bra
    description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quas sunt pariatur! Eius laudantium cumque voluptatum facere quos dolorem sint similique quibusdam velit, minima, nulla est neque cupiditate rem sequi?
    position: 50% 0%
 licenser:
@@ -26,25 +26,21 @@ licenser:
     description: Omhändertagande av hundvalpar
   - title: Den rutiga hundens skola
     description: Lär dig allt om att äga en hund
-  - title: Valpiga möjligheter
-    description: Omhändertagande av hundvalpar
-  - title: Den rutiga hundens skola
-    description: Lär dig allt om att äga en hund
 scroll-banner:
   image: /images/hund-2.jpg
   position: 50% 5%
   heading: Marita är bäst!
   sub-heading: Lorem ipsum dolor sit amet consectetur.
 ---         
-<!--------------------------- This is the grid with text and image --------------------------->
+<!--------------------------- This is the banner with text and image --------------------------->
 <section class="min-h-90 bg-fixed bg-cover bg-center" style="background-image: url('{{ page.banner.image }}'); background-position:{{ page.banner.position }}">
   <div class="grid grid-cols-5">
 
     {% for item in page.featured-text %}
 
-    <div class="col-span-2 justify-center items-center text-center flex flex-col bg-middle-green-color rounded-full m-5"> 
-      <h2 class="uppercase text-2xl text-green-color m-5"> {{ item.title }} </h2>
-      <p class="max-w-xl text-green-color"> {{ item.description }} </p>
+    <div class="col-span-2 justify-center items-center text-center flex flex-col bg-middle-green-color m-5 p-5p"> 
+      <h2 class="uppercase text-3xl mb-5 text-green-color font-cursive-text"> {{ item.title }} </h2>
+      <p class="max-w-xl text-white"> {{ item.description }} </p>
     </div>
     <div class="col-span-3">
     </div>
@@ -57,7 +53,7 @@ scroll-banner:
 <!--------------------------- This is the grid with text and image - if you want to have image/text on different sides --------------------------->
 <!-- <section>
   <div class="grid grid-cols-5">
-    {% for item in page.faqs-parttwo %}
+    {% for item in page.featured-text %}
       {% if forloop.index == 1 or forloop.index == 3 %}
         <div class="col-span-3 min-h-60 bg-fixed bg-cover bg-center bg-green-color" style="background-image: url('{{ item.image }}'); background-position:{{ item.position }}">
         </div>
@@ -77,6 +73,19 @@ scroll-banner:
   </div>
 </section> -->
 
+<!--------------------------- This is the part with licens and rules --------------------------->
+<section class="p-5p bg-light-green-color text-green-color">
+  <h2 class="uppercase text-4xl font-cursive-text justify-center items-center flex mb-10"> Förhållningsregler </h2>
+  <div class="flex flex-wrap justify-center gap-10 ">
+    {% for item in page.licenser %}
+    <div class="min-h-50 box-shadow bg-middle-green-color text-white p-5p basis-1/5 shrink-0">
+      <h3> {{ item.title }} </h3>
+      <p> {{ item.description }} </p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
 <!--------------------------- Faq's --------------------------->
 <section class="p-5p bg-white">
   <h3 class="font-cursive-text text-4xl uppercase text-green-color mb-16 justify-center items-center flex"> Faq's </h3>
@@ -87,24 +96,11 @@ scroll-banner:
   </div>
 </section>
 
-<!--------------------------- This is the part with licenser and rules --------------------------->
-<section class="p-5p bg-middle-green-color text-green-color">
-  <h2 class="uppercase text-4xl font-cursive-text justify-center items-center flex mb-5p"> Förhållningsregler </h2>
-  <div class="flex flex-wrap justify-center gap-10 ">
-    {% for item in page.licenser %}
-    <div class="min-h-50 box-shadow bg-light-green-color text-green-color p-5p basis-1/5 shrink-0">
-      <h3> {{ item.title }} </h3>
-      <p> {{ item.description }} </p>
-    </div>
-    {% endfor %}
-  </div>
-</section>
-
 <!--------------------------- This is the scrolling image --------------------------->
 <section class="min-h-70 bg-fixed bg-cover bg-center" style="background-image: url('{{ page.scroll-banner.image }}'); background-position:{{ page.scroll-banner.position }}">
-  <div class="p-8">
-    <h2 class=""> {{ page.scroll-banner.heading }} </h2>
-    <h3 class=""> {{ page.scroll-banner.sub-heading }} </h3>
+  <div class="p-8 text-white">
+    <h2 class="text-4xl font-cursive-text mb-2"> {{ page.scroll-banner.heading }} </h2>
+    <h3 class="text-lg"> {{ page.scroll-banner.sub-heading }} </h3>
   </div>
 </section> 
 
