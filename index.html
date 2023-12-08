@@ -74,27 +74,41 @@ seo:
 <!---------------- This is the about section ---------------->
 <section class="bg-middle-green-color p-5">
   <h2 class="text-4xl p-5 justify-center flex uppercase text-white font-cursive-text"> Om pensionatet </h2>
-  <div class="grid grid-cols-3 min-h-80 text-dark-color">
-    <div class="col-span-2 justify-center flex flex-col items-center text-white"> 
+
+    <div class="justify-center flex flex-col items-center text-white"> 
       <p class="leading-6 m-5 mb-0 p-5p pb-0"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tempore incidunt, ex aspernatur unde facilis ipsam, illum itaque rerum perspiciatis ratione ipsa sapiente! Pariatur et, consequuntur vero ipsam mollitia cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore ipsam sed dolor voluptatum ratione eaque porro blanditiis omnis! Ullam reiciendis facilis iusto, cupiditate eligendi et quod obcaecati accusantium numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque cumque rem aliquid excepturi animi corporis quae sapiente quis non? Fugit enim animi quo similique! Expedita aspernatur officiis nisi saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum nemo aspernatur saepe reiciendis adipisci necessitatibus reprehenderit veritatis sapiente quidem dolores obcaecati, explicabo vero fuga cum earum? Asperiores, eos facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, non, illum error cupiditate perferendis consequuntur itaque rerum at in aperiam quidem, veritatis cum accusamus deserunt a sint quod quas quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam optio totam voluptatem aut numquam quam, nobis consequatur? Dolorum maxime fuga voluptatem eaque beatae voluptate dolorem corporis iure, amet aliquid et!</p>
       <p class="leading-6 m-5 mt-0 p-5p"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tempore incidunt, ex aspernatur unde facilis ipsam, illum itaque rerum perspiciatis ratione ipsa sapiente! Pariatur et, consequuntur vero ipsam mollitia cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore ipsam sed dolor voluptatum ratione eaque porro blanditiis omnis! Ullam reiciendis facilis iusto, cupiditate eligendi et quod obcaecati accusantium numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque cumque rem aliquid excepturi animi corporis quae sapiente quis non? Fugit enim animi quo similique! Expedita aspernatur officiis nisi saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum nemo aspernatur saepe reiciendis adipisci necessitatibus reprehenderit veritatis sapiente quidem dolores obcaecati, explicabo vero fuga cum earum? Asperiores, eos facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, non, illum error cupiditate perferendis consequuntur itaque rerum at in aperiam quidem, veritatis cum accusamus deserunt a sint quod quas quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam optio totam voluptatem aut numquam quam, nobis consequatur? Dolorum maxime fuga voluptatem eaque beatae voluptate dolorem corporis iure, amet aliquid et!</p>
     </div>
-    <div class="col-span-1 relative">
-      <img src="{{ page.about-image }}" alt="" class="absolute inset-0 w-full h-full object-cover object-center rounded-full mt-0">
-    </div>
-  </div>  
 
+    <div class="grid grid-cols-4">
+      <div class=" flex justify-center">
+        <img src="{{ page.about-image }}" alt="" class=" inset-0 w-4/5 object-cover object-center mt-0">
+      </div>
+      <div class=" flex justify-center">
+        <img src="{{ page.about-image }}" alt="" class=" inset-0 w-4/5 object-cover object-center mt-0">
+      </div>
+      <div class="flex justify-center">
+        <img src="{{ page.about-image }}" alt="" class=" inset-0 w-4/5 object-cover object-center mt-0">
+      </div>
+      <div class="flex justify-center">
+        <img src="{{ page.about-image }}" alt="" class=" inset-0 w-4/5 object-cover object-center mt-0">
+      </div>
+    </div>  
+
+</section>
+
+<section class="bg-middle-green-color">     
   <div class="flex flex-row gap-10">
-  {% for item in page.why-us %}
-  <div class="flex flex-col items-center p-8 text-center">
-    <div class="text-4xl p-5 my-5">
-      <i class="{{ item.icon }} border-white border-2 p-10 rounded-full text-white"></i>  <!-- This is the font awesome icon -->
+    {% for item in page.why-us %}
+    <div class="flex flex-col items-center p-8 text-center">
+      <div class="text-4xl p-5 my-5">
+        <i class="{{ item.icon }} border-white border-2 p-10 rounded-full text-white"></i>  <!-- This is the font awesome icon -->
+      </div>
+      <h3 class="font-cursive-text text-4xl mb-2 text-white"> {{ item.heading }} </h3>
+      <p class="text-white mt-4"> {{ item.description }} </p>
     </div>
-    <h3 class="font-cursive-text text-4xl mb-2 text-white"> {{ item.heading }} </h3>
-    <p class="text-white mt-4"> {{ item.description }} </p>
-  </div>
-  {% endfor %}
-  </div>
+    {% endfor %}
+    </div>
 </section>
 
 <!---------------- This is the map/contact section ---------------->

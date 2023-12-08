@@ -38,12 +38,12 @@ price-grid:
    
      
         {% for item in page.price-grid %}
-        <div class="flex {% cycle 'flex-row','flex-row-reverse' %} ">
+        <div class="flex {% cycle 'flex-row','flex-row-reverse' %} p-5 text-white gap-10">
             <div class="min-h-50 bg-cover bg-center basis-1/2" style="background-image: url('{{ item.image }}'); background-position:{{ page.banner-image.position }}" >
             </div>
-            <div class=" border-2 border-white min-h-50 flex flex-col justify-center basis-1/2 p-5p">
+            <div class=" border-2 border-green-color min-h-50 flex flex-col justify-center basis-1/2 p-5 uppercase">
                 <h2 class="text-3xl pb-10"> {{ item.dogs }} </h2>
-                <p class="pb-5"> {{ item.description }} </p>
+                <p class="pb-5 capitalize"> {{ item.description }} </p>
                 <p class="pb-3"> {{ item.week }} <span class="ml-5"> {{ item.week-price }} kr </span>  </p>
                 <p class=""> {{ item.weekend }} <span class="ml-5"> {{ item.weekend-price }} kr  </span> </p>
             </div>

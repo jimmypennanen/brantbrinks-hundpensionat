@@ -101,9 +101,9 @@ scroll-banner:
 <!--------------------------- This is the part with licenser and rules --------------------------->
 <section class="p-5p bg-middle-green-color text-green-color">
   <h2 class="uppercase text-4xl font-cursive-text justify-center items-center flex mb-5p"> Förhållningsregler </h2>
-  <div class="grid grid-cols-4 gap-10">
+  <div class="flex flex-wrap justify-center gap-10 ">
     {% for item in page.licenser %}
-    <div class="min-h-50 box-shadow bg-light-green-color text-green-color max-w-sm p-5p">
+    <div class="min-h-50 box-shadow bg-light-green-color text-green-color p-5p basis-1/5 shrink-0">
       <h3> {{ item.title }} </h3>
       <p> {{ item.description }} </p>
     </div>
