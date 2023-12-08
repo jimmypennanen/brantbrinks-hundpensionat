@@ -35,8 +35,6 @@ price-grid:
 <section class="p-5p text-center text-white bg-middle-green-color">
     <h2 class=" text-2xl uppercase font-cursive-text mb-10 text-green-color"> Priser </h2>
 
-   
-     
         {% for item in page.price-grid %}
         <div class="flex {% cycle 'flex-row','flex-row-reverse' %} p-5 text-white gap-10">
             <div class="min-h-50 bg-cover bg-center basis-1/2" style="background-image: url('{{ item.image }}'); background-position:{{ page.banner-image.position }}" >
@@ -50,7 +48,6 @@ price-grid:
         </div>
         {% endfor %}
             
-   
   </section>
 
 <!---------------- This is additional price info ---------------->
@@ -71,14 +68,9 @@ price-grid:
     </div>
 </section>
 
+<!---------------- This is the image on above the footer ---------------->
 <section class="">
-    <div class="bg-cover bg-center min-h-50" style="background-image: url('https://images.unsplash.com/photo-1561133211-6067fc8e7348?q=80&w=2930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-position:{{ page.banner-image.position }}"> 
-
+    <div class="bg-cover bg-center min-h-50" style="background-image: url('https://images.unsplash.com/photo-1561133211-6067fc8e7348?q=80&w=2930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-position:{{ page.banner-image.position }}">
     </div>
-</section>
-
-<section>
-    <div></div>
-    <div></div>
 </section>
 
