@@ -3,8 +3,10 @@ layout: default
 banner-image:
   image: /images/hund-2.jpg
   position: 50% 5%
-  header: Heading som jag ej vet vad
-  text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate porro quia suscipit non itaque libero veniam earum nesciunt? Sunt nemo beatae, tempore officiis reiciendis voluptas inventore iusto aperiam in numquam!
+  heading: Heading som jag ej vet vad
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate porro quia suscipit non itaque libero veniam earum nesciunt? Sunt nemo beatae, tempore officiis reiciendis voluptas inventore iusto aperiam in numquam!
+  url: /about.html
+  url-text: Kontakta mig
 price-cards:
  - image: https://images.unsplash.com/photo-1561037404-61cd46aa615b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
    dogs: 1 hund
@@ -54,7 +56,7 @@ seo:
 {% include hero-banner.html %}
 
 <!---------------- This is the cards with prices ---------------->
-<section class="p-5p text-center text-white bg-light-green-color">
+<section class="p-5p text-center text-white bg-beige-color">
   <h2 class=" text-4xl uppercase font-cursive-text mb-10 text-green-color"> Priser </h2>
   <div class="flex flex-row justify-center gap-10 min-h-[20vh]">
 
@@ -66,18 +68,26 @@ seo:
 
   </div>
   <div class="mt-5">
-    <a href="#" class="uppercase font-headings-text border-middle-green-color border-2 bg-middle-green-color hover:bg-light-green-color text-green-color hover:text-green-color hover:border-green-color hover:border-2 py-2 px-7 inline-block mt-6">
+    <a href="#" class="uppercase font-headings-text border-middle-green-color border-2 bg-middle-green-color hover:bg-beige-color text-green-color hover:text-green-color hover:border-green-color hover:border-2 py-2 px-7 inline-block mt-6">
     mer info </a>
   </div>
 </section>
 
 <!---------------- This is the about section ---------------->
 <section class="bg-middle-green-color p-5">
+
+  <!-- SVG -->
+<div class="bg-middle-green-color">
+  <svg viewBox="0 0 2192 111" fill="none" xmlns="http://www.w3.org/2000/svg" class="relative -top-1">
+      <path d="M2192 31.6148C2100.67 31.6148 2100.67 111 2009.31 111C1917.96 111 1917.98 31.6148 1826.63 31.6148C1735.27 31.6148 1735.29 111 1643.96 111C1552.63 111 1552.63 31.6148 1461.29 31.6148C1369.96 31.6148 1369.96 111 1278.63 111C1187.29 111 1187.29 31.6148 1095.96 31.6148C1004.63 31.6148 1004.63 111 913.293 111C821.959 111 821.959 31.6148 730.626 31.6148C639.293 31.6148 639.293 111 547.959 111C456.626 111 456.626 31.6148 365.293 31.6148C273.959 31.6148 273.959 111 182.646 111C91.3333 111 91.3333 31.6148 0 31.6148V0H1096H2192V31.6148Z" fill="#DFDBDA"/>
+  </svg>
+</div>
+
   <h2 class="text-4xl p-5 justify-center flex uppercase text-white font-cursive-text"> Om pensionatet </h2>
 
     <div class="justify-center flex flex-col items-center text-white"> 
-      <p class="leading-6 m-5 mb-0 p-5p pb-0"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tempore incidunt, ex aspernatur unde facilis ipsam, illum itaque rerum perspiciatis ratione ipsa sapiente! Pariatur et, consequuntur vero ipsam mollitia cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore ipsam sed dolor voluptatum ratione eaque porro blanditiis omnis! Ullam reiciendis facilis iusto, cupiditate eligendi et quod obcaecati accusantium numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque cumque rem aliquid excepturi animi corporis quae sapiente quis non? Fugit enim animi quo similique! Expedita aspernatur officiis nisi saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum nemo aspernatur saepe reiciendis adipisci necessitatibus reprehenderit veritatis sapiente quidem dolores obcaecati, explicabo vero fuga cum earum? Asperiores, eos facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, non, illum error cupiditate perferendis consequuntur itaque rerum at in aperiam quidem, veritatis cum accusamus deserunt a sint quod quas quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam optio totam voluptatem aut numquam quam, nobis consequatur? Dolorum maxime fuga voluptatem eaque beatae voluptate dolorem corporis iure, amet aliquid et!</p>
-      <p class="leading-6 m-5 mt-0 p-5p"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tempore incidunt, ex aspernatur unde facilis ipsam, illum itaque rerum perspiciatis ratione ipsa sapiente! Pariatur et, consequuntur vero ipsam mollitia cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore ipsam sed dolor voluptatum ratione eaque porro blanditiis omnis! Ullam reiciendis facilis iusto, cupiditate eligendi et quod obcaecati accusantium numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque cumque rem aliquid excepturi animi corporis quae sapiente quis non? Fugit enim animi quo similique! Expedita aspernatur officiis nisi saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum nemo aspernatur saepe reiciendis adipisci necessitatibus reprehenderit veritatis sapiente quidem dolores obcaecati, explicabo vero fuga cum earum? Asperiores, eos facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, non, illum error cupiditate perferendis consequuntur itaque rerum at in aperiam quidem, veritatis cum accusamus deserunt a sint quod quas quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam optio totam voluptatem aut numquam quam, nobis consequatur? Dolorum maxime fuga voluptatem eaque beatae voluptate dolorem corporis iure, amet aliquid et!</p>
+      <p class="leading-6 m-5 mb-0 p-5p pb-0 editable"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tempore incidunt, ex aspernatur unde facilis ipsam, illum itaque rerum perspiciatis ratione ipsa sapiente! Pariatur et, consequuntur vero ipsam mollitia cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore ipsam sed dolor voluptatum ratione eaque porro blanditiis omnis! Ullam reiciendis facilis iusto, cupiditate eligendi et quod obcaecati accusantium numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque cumque rem aliquid excepturi animi corporis quae sapiente quis non? Fugit enim animi quo similique! Expedita aspernatur officiis nisi saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum nemo aspernatur saepe reiciendis adipisci necessitatibus reprehenderit veritatis sapiente quidem dolores obcaecati, explicabo vero fuga cum earum? Asperiores, eos facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, non, illum error cupiditate perferendis consequuntur itaque rerum at in aperiam quidem, veritatis cum accusamus deserunt a sint quod quas quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam optio totam voluptatem aut numquam quam, nobis consequatur? Dolorum maxime fuga voluptatem eaque beatae voluptate dolorem corporis iure, amet aliquid et!</p>
+      <p class="leading-6 m-5 mt-0 p-5p editable"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tempore incidunt, ex aspernatur unde facilis ipsam, illum itaque rerum perspiciatis ratione ipsa sapiente! Pariatur et, consequuntur vero ipsam mollitia cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore ipsam sed dolor voluptatum ratione eaque porro blanditiis omnis! Ullam reiciendis facilis iusto, cupiditate eligendi et quod obcaecati accusantium numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque cumque rem aliquid excepturi animi corporis quae sapiente quis non? Fugit enim animi quo similique! Expedita aspernatur officiis nisi saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum nemo aspernatur saepe reiciendis adipisci necessitatibus reprehenderit veritatis sapiente quidem dolores obcaecati, explicabo vero fuga cum earum? Asperiores, eos facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, non, illum error cupiditate perferendis consequuntur itaque rerum at in aperiam quidem, veritatis cum accusamus deserunt a sint quod quas quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam optio totam voluptatem aut numquam quam, nobis consequatur? Dolorum maxime fuga voluptatem eaque beatae voluptate dolorem corporis iure, amet aliquid et!</p>
     </div>
 
     <div class="grid grid-cols-4">
@@ -112,7 +122,7 @@ seo:
 </section>
 
 <!---------------- This is the map/contact section ---------------->
-<section class="">
+<section class="bg-beige-color">
   <div>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2043.3333586943897!2d17.89389837695342!3d59.19372442186811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f71ba81620abf%3A0xe1ae06f2460f6dc3!2sBrantbrinks%20hundpensionat!5e0!3m2!1sno!2sno!4v1701690950136!5m2!1sno!2sno" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>

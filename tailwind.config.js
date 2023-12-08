@@ -31,7 +31,8 @@ module.exports = {
       colors: {
         'green-color': '#3E6D3C',
         'light-green-color': '#D7E3BE',
-        'middle-green-color': '#9EB79D'
+        'middle-green-color': '#9EB79D',
+        'beige-color': '#DFDBDA'
         },
       lineHeight: {
         'tight': '.85',

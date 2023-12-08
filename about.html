@@ -3,25 +3,26 @@ layout: default
 image-banner:
   image: https://images.unsplash.com/photo-1587463272361-565200f82b33?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   position: 45% 50%
-know-banner-image:
-  image: https://images.unsplash.com/photo-1587463272361-565200f82b33?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  position: 45% 50%
+  heading: Gör dig bekant med oss på pensionatet!
+  description:
+  url:
+  url-text:
 featured-text:
- - image: https://images.unsplash.com/photo-1591769225440-811ad7d6eab3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fGRvZ3xlbnwwfHwwfHx8MA%3D%3D
+ - image: /images/hund-64.jpg
    title: Elektro
    description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quas sunt pariatur! Eius laudantium cumque voluptatum facere quos dolorem sint similique quibusdam velit, minima, nulla est neque cupiditate rem sequi?
-   position: 50% 50%
- - image: https://images.unsplash.com/photo-1575859431774-2e57ed632664?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+   position: 50% 30%
+ - image: /images/hund-34.jpg
    title: Warg
    description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quas sunt pariatur! Eius laudantium cumque voluptatum facere quos dolorem sint similique quibusdam velit, minima, nulla est neque cupiditate rem sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam culpa placeat ut distinctio soluta accusantium aperiam consequuntur eos amet eveniet? Earum accusantium dignissimos tenetur error cum maiores ut incidunt sequi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nesciunt commodi cupiditate expedita, labore deleniti reiciendis autem doloribus explicabo nisi blanditiis alias non ipsam aspernatur nihil, architecto maiores. Laudantium, cupiditate.
-   position: 50% 50%
- - image: https://images.unsplash.com/photo-1521673461164-de300ebcfb17?q=80&w=3067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+   position: 80% 50%
+ - image: /images/hund-28.jpg
    title: Waldemar
    description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quas sunt pariatur! Eius laudantium cumque voluptatum facere quos dolorem sint similique quibusdam velit, minima, nulla est neque cupiditate rem sequi?
    position: 50% 50%
 about-me:
    image: /images/dog-bones.jpg
-   position: 50% 50%
+   position: 80% 50%
    heading: Marita är mitt fantastiska namn
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex earum sunt, soluta, fuga, aperiam aliquam temporibus asperiores libero assumenda vel et animi adipisci dolore quo minima? Rem nam rerum officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolores obcaecati, cumque corporis eligendi deleniti? Maxime non officiis officia necessitatibus quod deleniti atque esse, perspiciatis, distinctio blanditiis pariatur nam ut
    description-2: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda consequatur harum, nulla sapiente totam, deserunt praesentium sunt debitis nesciunt, voluptatum laborum eius velit. Error doloremque eum nulla? Fuga, saepe? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis sint libero doloribus, nam saepe exercitationem dolores nulla ex ipsam laborum nobis ullam nihil adipisci. Commodi veniam soluta reiciendis laboriosam voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, maxime doloribus qui autem ratione earum perspiciatis at quod deserunt tempore veniam sit atque amet, iusto vel. Labore nemo commodi facere.
@@ -29,10 +30,10 @@ about-me:
 <!--------------------------- This is the grid with text and image --------------------------->
 {% include image-banner.html %}
 
-<!--------------------------- This is the grid with text and image --------------------------->
-<section class="p-5p bg-light-green-color min-h-60 bg-cover bg-center" style="background-image: url('{{ page.know-banner-image.image }}'); background-position:{{ page.know-banner-image.position }}"> 
+<!--------------------------- This is the section about Maritas dogs --------------------------->
+<section class="p-5p bg-beige-color min-h-60 bg-cover bg-center"> 
 
-    <h2 class="uppercase font-cursive-text text-4xl text-center text-green-color mb-5"> Lär känna mig och mina hundar </h2>
+    <h2 class="uppercase font-cursive-text text-4xl text-center text-green-color mb-5"> Lär känna oss som bor här! </h2>
 
     <div class="p-5">
         <div class="grid grid-cols-5 max-w-50 border-8 p-5p border-white gap-20">
@@ -42,14 +43,14 @@ about-me:
 
             <div class="col-span-3 min-h-60 bg-cover bg-center bg-green-color border-8 border-middle-green-color" style="background-image: url('{{ item.image }}'); background-position:{{ item.position }}">
             </div>
-            <div class="col-span-2 justify-center items-center flex flex-col bg-middle-green-color text-center border-8 border-white p-15p"> 
+            <div class="col-span-2 justify-center items-center flex flex-col bg-beige-green-color text-center border-8 border-white p-15p"> 
                 <h2 class="uppercase text-2xl text-green-color m-5"> {{ item.title }} </h2>
                 <p class="text-green-color max-w-md"> {{ item.description }} </p>
             </div>
 
             {% else %}
 
-            <div class="col-span-2 justify-center items-center flex flex-col bg-middle-green-color text-center border-8 border-green-color p-15p"> 
+            <div class="col-span-2 justify-center items-center flex flex-col bg-beige-color text-center border-8 border-middle-green-color p-15p"> 
                 <h2 class="uppercase text-2xl text-green-color m-5"> {{ item.title }} </h2>
                 <p class="text-green-color max-w-md"> {{ item.description }} </p>
             </div>
@@ -64,6 +65,7 @@ about-me:
 
 </section>
 
+<!--------------------------- This is the section about Marita --------------------------->
 <section>
     <div class="p-5">
 
@@ -75,7 +77,7 @@ about-me:
             <p> {{ item.description-2 }} </p>
         </div>
 
-        <div class=" min-h-60 bg-cover bg-center bg-green-color border-8 border-white" style="background-image: url('{{ item.image }}'); background-position:{{ item.position }}">
+        <div class=" min-h-60 bg-cover bg-center bg-green-color border-8 border-white inline-block" style="background-image: url('{{ item.image }}'); background-position:{{ item.position }}">
         </div>
 
         {% endfor %}
