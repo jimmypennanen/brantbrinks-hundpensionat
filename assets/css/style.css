@@ -471,9 +471,6 @@ video {
 .m-0 {
   margin: 0px;
 }
-.m-auto {
-  margin: auto;
-}
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -529,14 +526,6 @@ video {
 }
 .mb-5p {
   margin-bottom: 5%;
-.mb-5p {
-  margin-bottom: 5%;
-}
-.mr-2 {
-  margin-right: 0.5rem;
-}
-.mb-16 {
-  margin-bottom: 4rem;
 }
 .block {
   display: block;
@@ -646,12 +635,6 @@ video {
 }
 .justify-between {
   justify-content: space-between;
-}
-.justify-around {
-  justify-content: space-around;
-}
-.justify-items-center {
-  justify-items: center;
 }
 .gap-10 {
   gap: 2.5rem;
@@ -929,9 +912,4 @@ html {
 .hover\:text-green-color:hover {
   --tw-text-opacity: 1;
   color: rgb(62 109 60 / var(--tw-text-opacity));
-}
-@media (min-width: 768px) {
-  .md\:w-\[50\%\] {
-    width: 50%;
-  }
 }
