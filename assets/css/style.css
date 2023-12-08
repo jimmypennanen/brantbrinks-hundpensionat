@@ -527,6 +527,27 @@ video {
 .mb-5p {
   margin-bottom: 5%;
 }
+.mt-3 {
+  margin-top: 0.75rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.ml-3 {
+  margin-left: 0.75rem;
+}
+.ml-10 {
+  margin-left: 2.5rem;
+}
+.ml-16 {
+  margin-left: 4rem;
+}
+.ml-24 {
+  margin-left: 6rem;
+}
+.ml-20 {
+  margin-left: 5rem;
+}
 .block {
   display: block;
 }
@@ -830,9 +851,6 @@ video {
 }
 .leading-6 {
   line-height: 1.5rem;
-}
-.leading-10 {
-  line-height: 2.5rem;
 }
 .tracking-wide {
   letter-spacing: 0.025em;

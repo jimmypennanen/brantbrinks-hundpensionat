@@ -3,7 +3,7 @@ layout: default
 banner: 
    image: /images/hund-2.jpg
    position: 50% 0%
-faqs-parttwo:
+featured-text:
  - image: /images/hund-2.jpg
    title: Jag bryr mig om din hund och dens välbefinnande.
    description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quas sunt pariatur! Eius laudantium cumque voluptatum facere quos dolorem sint similique quibusdam velit, minima, nulla est neque cupiditate rem sequi?
@@ -39,18 +39,22 @@ scroll-banner:
 <!--------------------------- This is the grid with text and image --------------------------->
 <section class="min-h-90 bg-fixed bg-cover bg-center" style="background-image: url('{{ page.banner.image }}'); background-position:{{ page.banner.position }}">
   <div class="grid grid-cols-5">
-    {% for item in page.faqs-parttwo %}
+
+    {% for item in page.featured-text %}
+
     <div class="col-span-2 justify-center items-center text-center flex flex-col bg-middle-green-color rounded-full m-5"> 
       <h2 class="uppercase text-2xl text-green-color m-5"> {{ item.title }} </h2>
       <p class="max-w-xl text-green-color"> {{ item.description }} </p>
     </div>
     <div class="col-span-3">
     </div>
+
     {% endfor %}
+
   </div>
 </section>
 
-<!--------------------------- This is the grid with text and image - different sides --------------------------->
+<!--------------------------- This is the grid with text and image - if you want to have image/text on different sides --------------------------->
 <!-- <section>
   <div class="grid grid-cols-5">
     {% for item in page.faqs-parttwo %}
@@ -74,22 +78,6 @@ scroll-banner:
 </section> -->
 
 <!--------------------------- Faq's --------------------------->
-<!-- <section class="p-15p text-center bg-middle-green-color">
-  <div class="max-screen-2xl mx-auto">
-      <h3 class="font-cursive-text text-4xl uppercase text-green-color mb-8"> Faq's </h3>
-  
-      {% for item in site.data.faqs %}
-      <div class="flex justify-between border-t-2 last:border-b-2 py-8 uppercase text-white">
-          <h4 class="m-0 text-xl"> {{ item.question }} </h4>
-          <p class="m-0 max-w-lg"> {{ item.answer }} </p>
-      </div>
-      {% endfor %}
-      
-  </div>
-</section> -->
-
-<!-- Tinas -->
-<!-- Frequently Asked Questions -->
 <section class="p-5p bg-white">
   <h3 class="font-cursive-text text-4xl uppercase text-green-color mb-16 justify-center items-center flex"> Faq's </h3>
   <div class="max-w-screen-xl mx-auto border-middle-green-color border-2 p-5p">
@@ -98,6 +86,7 @@ scroll-banner:
 
   </div>
 </section>
+
 <!--------------------------- This is the part with licenser and rules --------------------------->
 <section class="p-5p bg-middle-green-color text-green-color">
   <h2 class="uppercase text-4xl font-cursive-text justify-center items-center flex mb-5p"> Förhållningsregler </h2>
