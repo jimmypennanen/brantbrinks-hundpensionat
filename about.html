@@ -22,7 +22,7 @@ featured-text:
    position: 50% 50%
 about-me:
    image: /images/hund-60.jpg
-   position: 80% 50%
+   position: 50% 30%
    heading: Marita är mitt fantastiska namn
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex earum sunt, soluta, fuga, aperiam aliquam temporibus asperiores libero assumenda vel et animi adipisci dolore quo minima? Rem nam rerum officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolores obcaecati, cumque corporis eligendi deleniti? Maxime non officiis officia necessitatibus quod deleniti atque esse, perspiciatis, distinctio blanditiis pariatur nam ut
 ---
@@ -30,26 +30,26 @@ about-me:
 {% include image-banner.html %}
 
 <!--------------------------- This is the section about Maritas dogs --------------------------->
-<section class="p-5p bg-beige-color min-h-60 bg-cover bg-center"> 
+<section class="p-5p bg-beige-color min-h-60"> 
 
     <h2 class="uppercase font-cursive-text text-4xl text-center text-green-color mb-5"> Lär känna oss som bor här! </h2>
 
     <div class="p-5">
-        <div class="grid grid-cols-5 max-w-50 border-8 p-5p border-white gap-20">
+        <div class="grid grid-cols-5 border-8 p-5p border-white gap-20">
 
             {% for item in page.featured-text %}
             {% if forloop.index == 1 or forloop.index == 3 %}
 
             <div class="col-span-3 min-h-60 bg-cover bg-center bg-green-color border-8 border-middle-green-color" style="background-image: url('{{ item.image }}'); background-position:{{ item.position }}">
             </div>
-            <div class="col-span-2 justify-center items-center flex flex-col bg-beige-green-color text-center border-8 border-white p-15p"> 
+            <div class="col-span-2 justify-center flex flex-col text-center border-8 border-white p-15p"> 
                 <h2 class="uppercase text-2xl text-green-color m-5"> {{ item.title }} </h2>
                 <p class="text-green-color max-w-md"> {{ item.description }} </p>
             </div>
 
             {% else %}
 
-            <div class="col-span-2 justify-center items-center flex flex-col bg-beige-color text-center border-8 border-middle-green-color p-15p"> 
+            <div class="col-span-2 justify-center flex flex-col text-center border-8 border-middle-green-color p-15p"> 
                 <h2 class="uppercase text-2xl text-green-color m-5"> {{ item.title }} </h2>
                 <p class="text-green-color max-w-md"> {{ item.description }} </p>
             </div>
@@ -65,20 +65,18 @@ about-me:
 </section>
 
 <!--------------------------- This is the section about Marita --------------------------->
-<section>
-    <div class="p-5">
+<section class="p-5p bg-beige-color">
+    <div class="p-5 grid grid-cols-2 border-8 p-5p border-green-color gap-20">
 
-        {% for item in page.about-me %}
 
-        <div class="border-white border-8 mt-2 text-white mb-0">
-            <h3 class="p-5p text-center text-4xl"> {{item.heading}} </h3>
-            <p class="mb-5"> {{ item.description }} </p>
+        <div class="border-white border-8 p-15p text-green-color">
+            <h3 class="p-5p text-center text-4xl"> {{ page.about-me.heading }} </h3>
+            <p class="mb-5"> {{ page.about-me.description }} </p>
         </div>
 
-        <div class=" min-h-40 bg-cover bg-center bg-middle-green-color border-8 border-white inline-block" style="background-image: url('{{ item.image }}'); background-position:{{ item.position }}">
+        <div class=" min-h-60 bg-cover bg-center bg-middle-green-color border-8 border-white" style="background-image: url('{{ page.about-me.image }}'); background-position:{{ page.about-me.position }}">
         </div>
 
-        {% endfor %}
 
     </div>
 </section>
