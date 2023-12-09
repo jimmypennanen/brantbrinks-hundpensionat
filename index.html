@@ -60,15 +60,16 @@ seo:
 <!---------------- This is the big image-banner on the top of the page ---------------->
 {% include hero-banner.html %}
 
+    <!-- SVG -->
+<div class="bg-middle-green-color">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class=" z-10 block">
+    <path fill="#DFDBDA" fill-opacity="1" d="M0,160L288,96L576,224L864,160L1152,224L1440,32L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path>
+  </svg>
+</div>
+
 <!---------------- This is the cards with prices ---------------->
-
-<!-- SVG -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class=" z-10 absolute block">
-  <path fill="#DFDBDA" fill-opacity="1" d="M0,160L288,96L576,224L864,160L1152,224L1440,32L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path>
-</svg>
-
 <section class="p-5p text-center text-white bg-beige-color">
-  <h2 class=" text-4xl uppercase font-cursive-text mb-10 text-green-color"> Priser </h2>
+  <h2 class=" text-4xl uppercase font-cursive-text mb-10 text-green-color z-20"> Priser </h2>
   <div class="flex flex-row justify-center gap-10 min-h-[20vh]">
 
     {% for item in page.price-cards %}
@@ -79,7 +80,7 @@ seo:
 
   </div>
   <div class="mt-5">
-    <a href="#" class="uppercase font-headings-text border-middle-green-color border-2 bg-middle-green-color hover:bg-beige-color text-green-color hover:text-green-color hover:border-green-color hover:border-2 py-2 px-7 inline-block mt-6">
+    <a href="/price.html" class="uppercase font-headings-text border-middle-green-color border-2 bg-middle-green-color hover:bg-beige-color text-green-color hover:text-green-color hover:border-green-color hover:border-2 py-2 px-7 inline-block mt-6">
     mer info </a>
   </div>
 </section>

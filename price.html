@@ -10,6 +10,7 @@ banner-image:
   url-text: Ställ din fråga!
 price-grid:
  - image: /images/hund-13.jpg
+   position: 50% 15%
    dogs: 1 hund
    description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus velit ex sit inventore minima iusto cumque ab error ea, minus dolor esse repellat eius atque quod architecto quae explicabo tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, inventore dignissimos est at voluptatum pariatur alias! Eligendi quas perspiciatis expedita, inventore repellendus natus debitis tempore voluptate delectus eos? Tenetur, magnam?
    week: måndag - fredag
@@ -17,6 +18,7 @@ price-grid:
    weekend: lördag - söndag
    weekend-price: 400
  - image: /images/hund-24.jpg
+   position: 50% 0%
    dogs: 2 hundar
    description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus velit ex sit inventore minima iusto cumque ab error ea, minus dolor esse repellat eius atque quod architecto quae explicabo tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, inventore dignissimos est at voluptatum pariatur alias! Eligendi quas perspiciatis expedita, inventore repellendus natus debitis tempore voluptate delectus eos? Tenetur, magnam?
    week: måndag - fredag
@@ -24,6 +26,7 @@ price-grid:
    weekend: lördag - söndag
    weekend-price: 500
  - image: /images/hund-16.jpg
+   position: 50% 50%
    dogs: 3 hundar
    description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus velit ex sit inventore minima iusto cumque ab error ea, minus dolor esse repellat eius atque quod architecto quae explicabo tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, inventore dignissimos est at voluptatum pariatur alias! Eligendi quas perspiciatis expedita, inventore repellendus natus debitis tempore voluptate delectus eos? Tenetur, magnam?
    week: måndag - fredag
@@ -40,7 +43,7 @@ price-grid:
 
         {% for item in page.price-grid %}
         <div class="flex {% cycle 'flex-row','flex-row-reverse' %} p-5 text-white gap-10">
-            <div class="min-h-50 bg-cover bg-center basis-1/2" style="background-image: url('{{ item.image }}'); background-position:{{ page.banner-image.position }}" >
+            <div class="min-h-50 bg-cover bg-center basis-1/2" style="background-image: url('{{ item.image }}'); background-position:{{ item.position }}" >
             </div>
             <div class=" border-2 border-green-color min-h-50 flex flex-col justify-center basis-1/2 p-5 uppercase">
                 <h2 class="text-3xl pb-10"> {{ item.dogs }} </h2>
@@ -62,10 +65,10 @@ price-grid:
         <div class=""> 
             <h2 class="text-2xl pl-5p uppercase"> din hund i fokus. </h2>
             <ul class="list-disc p-5p">
-                <li class="mb-3"> Priserna gäller per påbörjat dygn </li>
-                <li class="mb-3"> 150 kr tillägg för afton och röda dagar </li>
-                <li class="mb-3"> Vid fler än en hund från samma familj gäller ovanstående prislista under förutsättning att hundarna kan vistas i samma box </li>
-                <li class="mb-3"> Betalning sker i förskott  7 dagar innan vistelsen  på företagets plusgirokonto <br> Nordea 570235-2, uppge hundens namn samt vistelsetid </li>
+                <li class="mb-3"> <p class="ml-2"> Priserna gäller per påbörjat dygn </p>  </li>
+                <li class="mb-3"> <p class="ml-2"> 150 kr tillägg för afton och röda dagar  </p> </li>
+                <li class="mb-3"> <p class="ml-2"> Vid fler än en hund från samma familj gäller ovanstående prislista under förutsättning att hundarna kan vistas i samma box </p> </li>
+                <li class="mb-3"> <p class="ml-2"> Betalning sker i förskott  7 dagar innan vistelsen  på företagets plusgirokonto Nordea 570235-2, uppge hundens namn samt vistelsetid</p> </li>
             </ul>    
         </div>
     </div>
