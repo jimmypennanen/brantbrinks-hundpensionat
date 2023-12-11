@@ -722,6 +722,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(62 109 60 / var(--tw-bg-opacity));
 }
+.bg-light-green-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 227 190 / var(--tw-bg-opacity));
+}
 .bg-cover {
   background-size: cover;
 }
@@ -899,6 +903,9 @@ video {
 }
 .opacity-50 {
   opacity: 0.5;
+}
+.opacity-5 {
+  opacity: 0.05;
 }
 .transition-all {
   transition-property: all;
