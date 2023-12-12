@@ -25,6 +25,13 @@ about-me:
    position: 50% 30%
    heading: Marita är mitt fantastiska namn
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex earum sunt, soluta, fuga, aperiam aliquam temporibus asperiores libero assumenda vel et animi adipisci dolore quo minima? Rem nam rerum officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolores obcaecati, cumque corporis eligendi deleniti? Maxime non officiis officia necessitatibus quod deleniti atque esse, perspiciatis, distinctio blanditiis pariatur nam ut
+dogs:
+  - title: Warg
+    description: Den äldsta hunden är mina tre hundar.
+  - title: Waldermar
+    description: Den yngsta hunden på gården.
+  - title: Elektro
+    description: Mellanhunden.
 seo:
   title: Om Brantbrinks Hundpensionat
   description: "litet, gulligt hundpensionat. precis som hemma"
@@ -35,8 +42,21 @@ seo:
 <!--------------------------- This is the grid with text and image --------------------------->
 {% include image-banner.html %}
 
+<!--------------------------- This is the section about Maritas dogs new --------------------------->
+<section class="p-5p pb-0 bg-beige-color">
+  <!-- <h2 class="text-6xl font-cursive-text justify-center items-center flex mb-10"> Hundarna som bor här permanent </h2> -->
+  <div class="flex flex-wrap justify-center gap-10 ">
+    {% for item in page.dogs %}
+    <div class="min-w-50 min-h-50 box-shadow bg-beige-color text-middle-green-color p-5p pb-0 basis-1/4 shrink-0">
+      <h3 class="uppercase text-4xl"> {{ item.title }} </h3>
+      <p class="mt-5"> {{ item.description }} </p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
 <!--------------------------- This is the section about Maritas dogs --------------------------->
-<section class="p-5p bg-beige-color min-h-60"> 
+<!-- <section class="p-5p bg-beige-color min-h-60"> 
 
     <h2 class="uppercase font-cursive-text text-4xl text-center text-green-color mb-5"> Lär känna oss som bor här! </h2>
 
@@ -68,19 +88,19 @@ seo:
         </div>
     </div>
 
-</section>
+</section> -->
 
 <!--------------------------- This is the section about Marita --------------------------->
 <section class="p-5p bg-beige-color">
-    <div class="p-5 grid grid-cols-2 border-8 p-5p border-green-color gap-20">
+    <div class="grid grid-cols-2 gap-5">
 
 
-        <div class="border-white border-8 p-15p text-green-color">
-            <h3 class="p-5p text-center text-4xl"> {{ page.about-me.heading }} </h3>
-            <p class="mb-5"> {{ page.about-me.description }} </p>
+        <div class="p-15p text-gray-600">
+            <h3 class="text-4xl"> {{ page.about-me.heading }} </h3>
+            <p class="my-5"> {{ page.about-me.description }} </p>
         </div>
 
-        <div class=" min-h-60 bg-cover bg-center bg-middle-green-color border-8 border-white" style="background-image: url('{{ page.about-me.image }}'); background-position:{{ page.about-me.position }}">
+        <div class="min-h-90 bg-cover bg-center bg-middle-green-color" style="background-image: url('{{ page.about-me.image }}'); background-position:{{ page.about-me.position }}">
         </div>
 
 
@@ -88,7 +108,7 @@ seo:
 </section>
 
 <!--------------------------- This is the scrolling image banner --------------------------->
-<section class="bg-beige-color  m-0 p-0 slider-section">
+<!-- <section class="bg-beige-color  m-0 p-0 slider-section">
     <div class="mx-auto max-w-full  text-center py-0 px-0">
   
           <div class="top-slider">
@@ -159,9 +179,9 @@ seo:
                 <img src="/images/hund-33.jpg" alt="" class="max-h-5p"> 
               </div>
             </div>
-          </div>
+          </div> -->
   
-          <!-- <div class="bottom-slider">
+        <!-- <div class="bottom-slider">
             <div class="slides">
               <div class="text-wrapper">
                 <span> This is slide 1 </span>
@@ -180,6 +200,5 @@ seo:
               </div>
             </div>
           </div> -->
-  
-        </div>
-</section>
+        <!-- </div>
+</section> -->

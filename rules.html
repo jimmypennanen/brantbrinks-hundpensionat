@@ -3,29 +3,13 @@ layout: default
 banner: 
    image: /images/hund-2.jpg
    position: 50% 0%
-featured-text:
- - image: /images/hund-2.jpg
-   title: Med din hund i fokus
-   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quas sunt pariatur! Eius laudantium cumque voluptatum facere quos dolorem sint similique quibusdam velit, minima, nulla est neque cupiditate rem sequi?
-   position: 50% 0%
- - image: /images/hund-3.jpg
-   title: Jag bryr mig om din hund och dens välbefinnande.
-   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quas sunt pariatur! Eius laudantium cumque voluptatum facere quos dolorem sint similique quibusdam velit, minima, nulla est neque cupiditate rem sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam culpa placeat ut distinctio soluta accusantium aperiam consequuntur eos amet eveniet? Earum accusantium dignissimos tenetur error cum maiores ut incidunt sequi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nesciunt commodi cupiditate expedita, labore deleniti reiciendis autem doloribus explicabo nisi blanditiis alias non ipsam aspernatur nihil, architecto maiores. Laudantium, cupiditate.
-   position: 50% 0%
- - image: /images/hund-4.jpg
-   title: Hos mig har hunden det bra
-   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quas sunt pariatur! Eius laudantium cumque voluptatum facere quos dolorem sint similique quibusdam velit, minima, nulla est neque cupiditate rem sequi?
-   position: 50% 0%
-licenser:
-  - title: Kungliga hundskolan
-    description: Treårig utbildning för kungliga hundar
-    background: Älskar djur sedan barnsben
-  - title: Corgi skolans universitet
-    description: Corgiparadiset på distansutbildning
-  - title: Valpiga möjligheter
-    description: Omhändertagande av hundvalpar
-  - title: Den rutiga hundens skola
-    description: Lär dig allt om att äga en hund
+featured:
+  image: /images/hund-2.jpg
+  title: Frågor och svar
+  description: Funderar du över något kanske din fråga är besvarad här nedanför - om inte kan du kontakta mig här.
+  url: /contact.html
+  url-text: Kontakt!
+  position: 50% 0%
 scroll-banner:
   image: /images/hund-2.jpg
   position: 50% 5%
@@ -42,16 +26,13 @@ seo:
 <section class="min-h-90 bg-fixed bg-cover bg-center" style="background-image: url('{{ page.banner.image }}'); background-position:{{ page.banner.position }}">
   <div class="grid grid-cols-5">
 
-    {% for item in page.featured-text %}
-
-    <div class="col-span-2 justify-center items-center text-center flex flex-col bg-middle-green-color m-5 p-5p"> 
-      <h2 class="uppercase text-3xl mb-5 text-green-color font-cursive-text"> {{ item.title }} </h2>
-      <p class="max-w-xl text-white"> {{ item.description }} </p>
+    <div class="col-span-2 justify-center items-center text-beige-color m-5 p-5p"> 
+      <h2 class="uppercase text-4xl mb-5 font-cursive-text"> {{ page.featured.title }} </h2>
+      <p class="max-w-xl"> {{ page.featured.description }} </p>
     </div>
-    <div class="col-span-3">
+    <div class="col-span-full ml-5 px-[2%]">
+      <a href=" {{ page.featured.url }} " class="uppercase font-headings-text bg-white hover:bg-green-color text-green-color hover:text-white py-2 px-7 inline-block max-w-fit"> {{ page.featured.url-text }} </a>
     </div>
-
-    {% endfor %}
 
   </div>
 </section>
@@ -78,19 +59,6 @@ seo:
     {% endfor %}
   </div>
 </section> -->
-
-<!--------------------------- This is the part with licens and rules --------------------------->
-<section class="p-5p bg-middle-green-color text-green-color">
-  <h2 class="uppercase text-4xl font-cursive-text justify-center items-center flex mb-10"> Förhållningsregler </h2>
-  <div class="flex flex-wrap justify-center gap-10 ">
-    {% for item in page.licenser %}
-    <div class="min-h-50 box-shadow bg-beige-color text-green-color p-5p basis-1/5 shrink-0">
-      <h3> {{ item.title }} </h3>
-      <p> {{ item.description }} </p>
-    </div>
-    {% endfor %}
-  </div>
-</section>
 
 <!--------------------------- Faq's --------------------------->
 <section class="p-5p bg-beige-color">
