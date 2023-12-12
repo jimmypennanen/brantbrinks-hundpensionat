@@ -35,19 +35,19 @@ about-image:
 why-us:
  - icon: fa-solid fa-house-chimney
    heading: Hög kvalitet
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni asperiores quasi fuga ut accusamus beatae. Numquam, recusandae! Maiores, voluptate pariatur eveniet cum sit sint repellat necessitatibus quidem ea ducimus!
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni asperiores
    alt: 
  - icon: fa-solid fa-paw
-   heading: Trygghet för din hund
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni asperiores quasi fuga ut accusamus beatae. Numquam, recusandae! Maiores, voluptate pariatur eveniet cum sit sint repellat necessitatibus quidem ea ducimus!
+   heading: Trygghet
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni asperiores 
    alt: 
  - icon: fa-solid fa-dog
    heading: Långa promenader
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni asperiores quasi fuga ut accusamus beatae. Numquam, recusandae! Maiores, voluptate pariatur eveniet cum sit sint repellat necessitatibus quidem ea ducimus!
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni asperiores 
    alt: 
  - icon: fa-solid fa-bone
    heading: Bra miljö
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni asperiores quasi fuga ut accusamus beatae. Numquam, recusandae! Maiores, voluptate pariatur eveniet cum sit sint repellat necessitatibus quidem ea ducimus!
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni asperiores 
    alt: 
 seo:
   title: Brantbrinks hundpensionat
@@ -61,11 +61,11 @@ seo:
 {% include hero-banner.html %}
 
     <!-- SVG -->
-<div class="bg-middle-green-color">
+<!-- <div class="bg-middle-green-color">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class=" z-10 block">
     <path fill="#DFDBDA" fill-opacity="1" d="M0,160L288,96L576,224L864,160L1152,224L1440,32L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path>
   </svg>
-</div>
+</div> -->
 
 <!---------------- This is the cards with prices ---------------->
 <section class="p-5p text-center text-white bg-beige-color">
@@ -86,37 +86,44 @@ seo:
 </section>
 
 <!-- SVG -->
-<div class="bg-middle-green-color">
+<!-- <div class="bg-middle-green-color">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
     <path fill="#DFDBDA" fill-opacity="1" d="M0,160L288,96L576,224L864,160L1152,224L1440,32L1440,0L1152,0L864,0L576,0L288,0L0,0Z"></path>
   </svg>
-</div>
+</div> -->
 
 <!---------------- This is the about section ---------------->
 <section class="bg-middle-green-color p-5p">
-  <h2 class="text-4xl p-5 justify-center flex uppercase text-white font-cursive-text"> Om pensionatet </h2>
+  <h2 class="text-4xl pb-5p justify-center flex uppercase text-white font-cursive-text"> Om pensionatet </h2>
 
-  <div class="grid grid-cols-4 gap-1">
+  <div class="grid grid-cols-4 gap-3">
     {% for item in page.about-image %}
     <div class=" flex justify-center">
-      <img src="{{ item.image }}" alt="" class="">
+      <img src="{{ item.image }}" alt="" class="rounded-3xl">
     </div>
     {% endfor %}
   </div>  
 
-  <div class=" flex flex-col mx-auto  text-white max-w-4xl"> 
+  <div class=" text-white"> 
     <h3 class="editable uppercase font-cursive-text mt-10 text-2xl text-center"> Vi är en gård full av djur </h3>
-    <p class="leading-6 m-5 mb-0 p-5p py-0 editable"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tempore incidunt, ex aspernatur unde facilis ipsam, illum itaque rerum perspiciatis ratione ipsa sapiente! Pariatur et, consequuntur vero ipsam mollitia cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore ipsam sed dolor voluptatum ratione eaque porro blanditiis omnis! Ullam reiciendis facilis iusto, cupiditate eligendi et quod obcaecati accusantium numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque cumque rem aliquid excepturi animi corporis quae sapiente quis non? Fugit enim animi quo similique! Expedita aspernatur officiis nisi saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum nemo aspernatur saepe reiciendis adipisci necessitatibus reprehenderit veritatis sapiente quidem dolores obcaecati, explicabo vero fuga cum earum? Asperiores, eos facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, non, illum error cupiditate perferendis consequuntur itaque rerum at in aperiam quidem, veritatis cum accusamus deserunt a sint quod quas quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam optio totam voluptatem aut numquam quam, nobis consequatur? Dolorum maxime fuga voluptatem eaque beatae voluptate dolorem corporis iure, amet aliquid et!</p>
-    <p class="leading-6 m-5 mt-0 p-5p pb-0 editable"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tempore incidunt, ex aspernatur unde facilis ipsam, illum itaque rerum perspiciatis ratione ipsa sapiente! Pariatur et, consequuntur vero ipsam mollitia cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore ipsam sed dolor voluptatum ratione eaque porro blanditiis omnis! Ullam reiciendis facilis iusto, cupiditate eligendi et quod obcaecati accusantium numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque cumque rem aliquid excepturi animi corporis quae sapiente quis non? Fugit enim animi quo similique! Expedita aspernatur officiis nisi saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum nemo aspernatur saepe reiciendis adipisci necessitatibus reprehenderit veritatis sapiente quidem dolores obcaecati, explicabo vero fuga cum earum? Asperiores, eos facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, non, illum error cupiditate perferendis consequuntur itaque rerum at in aperiam quidem, veritatis cum accusamus deserunt a sint quod quas quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam optio totam voluptatem aut numquam quam, nobis consequatur? Dolorum maxime fuga voluptatem eaque beatae voluptate dolorem corporis iure, amet aliquid et!</p>
+    <div class="grid grid-cols-2">
+      <p class="leading-7 p-5p editable"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tempore incidunt, ex aspernatur unde facilis ipsam, illum itaque rerum perspiciatis ratione ipsa sapiente! Pariatur et, consequuntur vero ipsam mollitia cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore ipsam sed dolor voluptatum ratione eaque porro blanditiis omnis! Ullam reiciendis facilis iusto, cupiditate eligendi et quod obcaecati accusantium numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque cumque rem aliquid excepturi animi corporis quae sapiente quis non? Fugit enim animi quo similique! Expedita aspernatur officiis nisi saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum nemo aspernatur saepe reiciendis adipisci necessitatibus reprehenderit veritatis sapiente quidem dolores obcaecati, explicabo vero fuga cum earum? Asperiores, eos facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, non, illum error cupiditate perferendis consequuntur itaque rerum at in aperiam quidem, veritatis cum accusamus deserunt a sint quod quas quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam optio totam voluptatem aut numquam quam, nobis consequatur? Dolorum maxime fuga voluptatem eaque beatae voluptate dolorem corporis iure, amet aliquid et!</p>
+      <p class="leading-7 p-5p editable"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tempore incidunt, ex aspernatur unde facilis ipsam, illum itaque rerum perspiciatis ratione ipsa sapiente! Pariatur et, consequuntur vero ipsam mollitia cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore ipsam sed dolor voluptatum ratione eaque porro blanditiis omnis! Ullam reiciendis facilis iusto, cupiditate eligendi et quod obcaecati accusantium numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque cumque rem aliquid excepturi animi corporis quae sapiente quis non? Fugit enim animi quo similique! Expedita aspernatur officiis nisi saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum nemo aspernatur saepe reiciendis adipisci necessitatibus reprehenderit veritatis sapiente quidem dolores obcaecati, explicabo vero fuga cum earum? Asperiores, eos facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, non, illum error cupiditate perferendis consequuntur itaque rerum at in aperiam quidem, veritatis cum accusamus deserunt a sint quod quas quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam optio totam voluptatem aut numquam quam, nobis consequatur? Dolorum maxime fuga voluptatem eaque beatae voluptate dolorem corporis iure, amet aliquid et!</p>
+    </div>
+   
   </div>
 
+</section>
+
+<!---------------- This is the icon section ---------------->
+<section class="bg-beige-color p-5p">
   <div class="flex flex-row gap-10">
 
     {% for item in page.why-us %}
 
     <div class="flex flex-col items-center p-8 pt-0 text-center">
       <div class="text-4xl p-5 my-5">
-        <i class="{{ item.icon }} border-white border-2 p-10 rounded-full text-white"></i>  <!-- This is the font awesome icon -->
+        <i class="{{ item.icon }} border-white border-2 p-8 rounded-full text-white"></i>  <!-- This is the font awesome icon -->
       </div>
       <h3 class="font-cursive-text text-3xl mb-2 text-white"> {{ item.heading }} </h3>
       <p class="text-white mt-4"> {{ item.description }} </p>
