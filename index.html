@@ -116,17 +116,17 @@ seo:
 </section>
 
 <!---------------- This is the icon section ---------------->
-<section class="bg-beige-color p-5p">
+<section class="bg-beige-color px-10p py-5 text-green-color">
   <div class="flex flex-row gap-10">
 
     {% for item in page.why-us %}
 
-    <div class="flex flex-col items-center p-8 pt-0 text-center">
-      <div class="text-4xl p-5 my-5">
-        <i class="{{ item.icon }} border-white border-2 p-8 rounded-full text-white"></i>  <!-- This is the font awesome icon -->
+    <div class="flex flex-col items-center justify-center text-center">
+      <div class="text-4xl p-5 mb-5">
+        <i class="{{ item.icon }} border-white border-2 p-8 rounded-full"></i>  <!-- This is the font awesome icon -->
       </div>
-      <h3 class="font-cursive-text text-3xl mb-2 text-white"> {{ item.heading }} </h3>
-      <p class="text-white mt-4"> {{ item.description }} </p>
+      <h3 class="font-cursive-text text-3xl mb-2"> {{ item.heading }} </h3>
+      <p class="py-5 max-w-[70%]"> {{ item.description }} </p>
     </div>
 
     {% endfor %}
