@@ -27,11 +27,11 @@ seo:
   <div class="grid grid-cols-5">
 
     <div class="col-span-2 justify-center items-center text-beige-color m-5 p-5p"> 
-      <h2 class="uppercase text-4xl mb-5 font-cursive-text"> {{ page.featured.title }} </h2>
-      <p class="max-w-xl"> {{ page.featured.description }} </p>
+      <h2 class="uppercase text-4xl mb-5 font-cursive"> {{ page.featured.title }} </h2>
+      <p class="max-w-xl font-normal"> {{ page.featured.description }} </p>
     </div>
     <div class="col-span-full ml-5 px-[2%]">
-      <a href=" {{ page.featured.url }} " class="uppercase font-headings-text bg-white hover:bg-green-color text-green-color hover:text-white py-2 px-7 inline-block max-w-fit"> {{ page.featured.url-text }} </a>
+      <a href=" {{ page.featured.url }} " class="uppercase font-heading bg-white hover:bg-green-color text-green-color hover:text-white py-2 px-7 inline-block max-w-fit"> {{ page.featured.url-text }} </a>
     </div>
 
   </div>
@@ -62,7 +62,7 @@ seo:
 
 <!--------------------------- Faq's --------------------------->
 <section class="p-5p bg-beige-color">
-  <h3 class="font-cursive-text text-4xl uppercase text-green-color mb-16 justify-center items-center flex"> Faq's </h3>
+  <h3 class="font-cursive text-4xl uppercase text-green-color mb-16 justify-center items-center flex"> Faq's </h3>
   <div class="max-w-screen-xl mx-auto border-middle-green-color border-2 p-5p">
 
       {% include accordion.html  accordion-source=site.data.faqs %}
@@ -73,7 +73,7 @@ seo:
 <!--------------------------- This is the scrolling image --------------------------->
 <section class="min-h-70 bg-fixed bg-cover bg-center" style="background-image: url('{{ page.scroll-banner.image }}'); background-position:{{ page.scroll-banner.position }}">
   <div class="p-8 text-white">
-    <h2 class="text-4xl font-cursive-text mb-2"> {{ page.scroll-banner.heading }} </h2>
-    <h3 class="text-lg"> {{ page.scroll-banner.sub-heading }} </h3>
+    <h2 class="text-4xl font-cursive mb-2"> {{ page.scroll-banner.heading }} </h2>
+    <h3 class="text-lg font-normal"> {{ page.scroll-banner.sub-heading }} </h3>
   </div>
 </section> 

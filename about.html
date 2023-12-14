@@ -48,8 +48,8 @@ seo:
   <div class="flex flex-wrap justify-center gap-10 ">
     {% for item in page.dogs %}
     <div class="min-w-50 min-h-50 box-shadow bg-beige-color text-middle-green-color p-5p pb-0 basis-1/4 shrink-0">
-      <h3 class="uppercase text-4xl"> {{ item.title }} </h3>
-      <p class="mt-5"> {{ item.description }} </p>
+      <h3 class="uppercase text-4xl font-heading"> {{ item.title }} </h3>
+      <p class="mt-5 font-normal"> {{ item.description }} </p>
     </div>
     {% endfor %}
   </div>
@@ -96,8 +96,8 @@ seo:
 
 
         <div class="p-15p text-gray-600">
-            <h3 class="text-4xl"> {{ page.about-me.heading }} </h3>
-            <p class="my-5"> {{ page.about-me.description }} </p>
+            <h3 class="text-4xl font-heading"> {{ page.about-me.heading }} </h3>
+            <p class="my-5 font-normal"> {{ page.about-me.description }} </p>
         </div>
 
         <div class="min-h-90 bg-cover bg-center bg-middle-green-color" style="background-image: url('{{ page.about-me.image }}'); background-position:{{ page.about-me.position }}">

@@ -8,8 +8,8 @@
                 <button type="button" class="py-6 block w-full" 
                         @click="selected !== {{ forloop.index }} ? selected = {{ forloop.index }} : selected = null">
                     <div class="flex items-center justify-between">
-                        <h4 class="mb-0 uppercase tracking-wide font-bold text-xl"> 
-                            <span class="font-cursive-text text-middle-green-color text-3xl mr-2 px-3 py-3">
+                        <h4 class="mb-0 uppercase tracking-wide font-heading font-bold text-xl"> 
+                            <span class="font-normal text-middle-green-color text-3xl mr-2 px-3 py-3">
                                 {% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}.
                             </span> 
                             {{ item.question }} 
@@ -29,8 +29,8 @@
                 		style="" x-ref="container{{ forloop.index }}" 
                 		x-bind:style="selected == {{ forloop.index }} ? 'max-height: ' + $refs.container{{ forloop.index }}.scrollHeight + 'px' : ''">
                     <div class="pb-6">
-                        <span class="font-cursive-text text-3xl ml-20"> Svar: </span>
-                        <p class="mb-0 mt-2 ml-20 m-w-sm"> 
+                        <span class="font-cursive text-3xl ml-20"> Svar: </span>
+                        <p class="mb-0 mt-2 ml-20 m-w-sm font-normal"> 
                             {{ item.answer }} 
                         </p>
                     </div>
