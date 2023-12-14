@@ -835,14 +835,14 @@ video {
 .text-center {
   text-align: center;
 }
-.font-cursive {
-  font-family: Fondamento, cursive;;
+.font-heading {
+  font-family: Cormorant Garamond, serif;
 }
 .font-normal {
   font-family: Proza Libre, sans-serif;
 }
-.font-heading {
-  font-family: Cormorant Garamond, serif;
+.font-cursive {
+  font-family: Fondamento, cursive;;
 }
 .text-xl {
   font-size: 1.25rem;
