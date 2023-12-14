@@ -44,7 +44,7 @@ seo:
 {% include hero-banner.html %}
 
 <!---------------- This is price info ---------------->
-<section class="p-10p text-center text-green-color bg-beige-color">
+<section class="p-5p text-center text-green-color bg-beige-color">
     <h2 class=" text-4xl uppercase font-cursive-text mb-10"> Priser </h2>
 
         {% for item in page.price-grid %}
@@ -59,11 +59,16 @@ seo:
             </div>
         </div>
         {% endfor %}
-            
+  </section>
+
+  <section class="bg-middle-green-color">
+    <div class="flex justify-center items-center min-h-[40vh]">
+      <h3 class="text-5xl text-white"> din hunds välmående är prio ett för mig!  </h3>
+    </div>
   </section>
 
 <!---------------- This is additional price info ---------------->
-<section class="p-5p bg-middle-green-color">
+<section class="p-5p bg-beige-color">
     <div class="grid grid-cols-2 px-5p min-h-50 items-center">
         <div class="rounded-full aspect-square bg-cover bg-center w-[85%] p-5p border-white border-2" style="background-image: url('/images/hund-2.jpg'); background-position:{{ page.banner-image.position }}"> 
         </div>
