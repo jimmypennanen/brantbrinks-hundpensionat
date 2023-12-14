@@ -836,10 +836,13 @@ video {
   text-align: center;
 }
 .font-cursive {
-  font-family: Pinyon Script, cursive;
+  font-family: Fondamento, cursive;;
 }
 .font-normal {
-  font-family: josefin sans, sans-serif;
+  font-family: Proza Libre, sans-serif;
+}
+.font-heading {
+  font-family: Cormorant Garamond, serif;
 }
 .text-xl {
   font-size: 1.25rem;
@@ -856,10 +859,6 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 1.2;
-}
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
 }
 .text-4xl {
   font-size: 2.25rem;

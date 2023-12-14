@@ -23,8 +23,9 @@ module.exports = {
       '9xl': ['8rem', '1'],
     },
     fontFamily: {
-      'normal': ['josefin sans', 'sans-serif'],
-      'cursive': ['Pinyon Script', 'cursive'],
+      'normal': ['Proza Libre', 'sans-serif'],
+      'heading': ['Cormorant Garamond', 'serif'],
+      'cursive': ['Fondamento', 'cursive;'],
     },
     extend: {
       colors: {

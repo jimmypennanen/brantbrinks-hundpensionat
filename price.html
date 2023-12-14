@@ -45,18 +45,18 @@ seo:
 {% include hero-banner.html %}
 
 <!---------------- This is price info ---------------->
-<section class="p-5p text-center text-green-color bg-beige-color">
-    <h2 class=" text-4xl uppercase font-cursive-text mb-10"> Priser </h2>
+<section class="p-5p text-center text-white bg-middle-green-color">
+    <h2 class="text-6xl font-cursive mb-10 text-green-color"> Priser </h2>
 
         {% for item in page.price-grid %}
         <div class="flex {% cycle 'flex-row','flex-row-reverse' %}">
             <div class="min-h-50 bg-cover bg-center basis-1/2" style="background-image: url('{{ item.image }}'); background-position:{{ item.position }}" >
             </div>
             <div class="min-h-50 flex flex-col justify-center basis-1/2 p-5p uppercase">
-                <h2 class="text-3xl pb-10"> {{ item.dogs }} </h2>
-                <p class="pb-5 capitalize"> {{ item.description }} </p>
-                <p class="pb-3"> {{ item.week }} <span class="ml-5"> {{ item.week-price }} kr </span>  </p>
-                <p class=""> {{ item.weekend }} <span class="ml-5"> {{ item.weekend-price }} kr  </span> </p>
+                <h2 class="text-3xl pb-10 font-heading"> {{ item.dogs }} </h2>
+                <p class="pb-5 capitalize font-normal"> {{ item.description }} </p>
+                <p class="pb-3 font-normal"> {{ item.week }} <span class="ml-5"> {{ item.week-price }} kr </span>  </p>
+                <p class="font-normal"> {{ item.weekend }} <span class="ml-5"> {{ item.weekend-price }} kr  </span> </p>
             </div>
         </div>
         {% endfor %}
@@ -64,7 +64,7 @@ seo:
 
   <section class="bg-middle-green-color">
     <div class="flex justify-center items-center min-h-[40vh]">
-      <h3 class="text-5xl text-white"> <span> " </span> du får mycket mer hos vivo, yeah! <span> " </span> </h3>
+      <h3 class="text-5xl text-white font-cursive"> Din hunds välmående är prio ett för mig!  </h3>
     </div>
   </section>
 
@@ -75,8 +75,8 @@ seo:
         </div>
     
         <div class=""> 
-            <h2 class="text-2xl pl-5p uppercase"> din hund i fokus. </h2>
-            <ul class="list-disc p-5p">
+            <h2 class="text-3xl pl-5p uppercase font-cursive"> din hund i fokus. </h2>
+            <ul class="list-disc p-5p font-normal">
                 <li class="mb-3"> <p class="ml-2"> Priserna gäller per påbörjat dygn </p>  </li>
                 <li class="mb-3"> <p class="ml-2"> 150 kr tillägg för afton och röda dagar  </p> </li>
                 <li class="mb-3"> <p class="ml-2"> Vid fler än en hund från samma familj gäller ovanstående prislista under förutsättning att hundarna kan vistas i samma box </p> </li>
