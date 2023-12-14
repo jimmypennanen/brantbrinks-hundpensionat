@@ -24,7 +24,7 @@ html {
 .blurred-background {
   background-size: cover;
   backdrop-filter: blur(1px); /* Adjust the blur level as needed */
-  background-color: rgba(158, 183, 157, 0.4) /* Adjust the alpha channel for transparency */
+  background-color: rgba(158, 183, 157, 0.4) ;/* Adjust the alpha channel for transparency */
 }
 
 /*---------------- This is for opacity on nav when scrolling ----------------*/

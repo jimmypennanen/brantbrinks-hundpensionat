@@ -3,6 +3,7 @@ layout: default
 banner-image:
   image: /images/hund-6.jpg
   blurred:
+  blurred-image: true
   position: 50% 40%
   heading: Heading som jag ej vet vad
   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate porro quia suscipit non itaque libero veniam earum nesciunt? Sunt nemo beatae, tempore officiis reiciendis voluptas inventore iusto aperiam in numquam!
@@ -44,13 +45,8 @@ seo:
 {% include hero-banner.html %}
 
 <!---------------- This is price info ---------------->
-<<<<<<< HEAD
 <section class="p-5p text-center text-green-color bg-beige-color">
     <h2 class=" text-4xl uppercase font-cursive-text mb-10"> Priser </h2>
-=======
-<section class="p-5p text-center text-white bg-middle-green-color">
-    <h2 class="text-4xl font-cursive mb-10 text-green-color"> Priser </h2>
->>>>>>> e27b2a95a079287904690c518cd42dec7602f6ee
 
         {% for item in page.price-grid %}
         <div class="flex {% cycle 'flex-row','flex-row-reverse' %}">
@@ -68,7 +64,7 @@ seo:
 
   <section class="bg-middle-green-color">
     <div class="flex justify-center items-center min-h-[40vh]">
-      <h3 class="text-5xl text-white"> din hunds välmående är prio ett för mig!  </h3>
+      <h3 class="text-5xl text-white"> <span> " </span> du får mycket mer hos vivo, yeah! <span> " </span> </h3>
     </div>
   </section>
 
