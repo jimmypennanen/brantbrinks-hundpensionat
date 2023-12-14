@@ -948,6 +948,8 @@ html {
 
 /*---------------- This is the blurry part of the hero-banner ----------------*/
 .blurred-background {
+  position: relative;
+  z-index: 15;
   background-size: cover;
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px); /* Adjust the blur level as needed */
