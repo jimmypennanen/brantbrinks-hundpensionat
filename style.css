@@ -22,6 +22,8 @@ html {
 
 /*---------------- This is the blurry part of the hero-banner ----------------*/
 .blurred-background {
+  position: relative;
+  z-index: 15;
   background-size: cover;
   backdrop-filter: blur(1px); /* Adjust the blur level as needed */
   background-color: rgba(158, 183, 157, 0.4) ;/* Adjust the alpha channel for transparency */
