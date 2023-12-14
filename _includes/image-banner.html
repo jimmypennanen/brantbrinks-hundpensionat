@@ -4,10 +4,10 @@
     <!------ You need the min-h class on the div that's holding the text to give it space to move around ------>
     <div class="max-w-screen-3xl min-h-90 blurred-background grid grid-cols-2 text-white">
         <div class="items-center flex col-span-2 flex-col justify-center">
-            <h2 class="p-5 text-8xl mb-6 font-cursive-text"> {{ page.image-banner.heading }} </h2>
-            <p class="max-w-md text-2xl font-headings-text">  {{ page.image-banner.description }} </p>
+            <h2 class="p-5 text-8xl mb-6 font-cursive"> {{ page.image-banner.heading }} </h2>
+            <p class="max-w-md text-2xl font-normal">  {{ page.image-banner.description }} </p>
             {% if page.image-banner.url %}
-            <a href=" {{ page.image-banner.url }} " class="uppercase font-headings-text bg-white col-span-2 flex hover:bg-green-color text-green-color hover:text-white py-2 px-7 inline-block max-w-fit"> {{ page.image-banner.url-text }} </a>
+            <a href=" {{ page.image-banner.url }} " class="uppercase font-normal bg-white col-span-2 flex hover:bg-green-color text-green-color hover:text-white py-2 px-7 inline-block max-w-fit"> {{ page.image-banner.url-text }} </a>
             {% endif %}
         </div>
     </div>

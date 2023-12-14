@@ -23,14 +23,12 @@ module.exports = {
       '9xl': ['8rem', '1'],
     },
     fontFamily: {
-      'headings-text': ['Lato', 'sans-serif'],
-      'cursive-text': ['Dancing Script', 'cursive'],
-      'paragraph-text': ['Roboto', 'sans-serif']
+      'normal': ['josefin sans', 'sans-serif'],
+      'cursive': ['Pinyon Script', 'cursive'],
     },
     extend: {
       colors: {
         'green-color': '#3E6D3C',
-        'light-green-color': '#D7E3BE',
         'middle-green-color': '#9EB79D',
         'beige-color': '#DFDBDA'
         },
