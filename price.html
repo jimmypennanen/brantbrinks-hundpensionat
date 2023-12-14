@@ -48,10 +48,10 @@ seo:
     <h2 class="text-4xl font-cursive mb-10 text-green-color"> Priser </h2>
 
         {% for item in page.price-grid %}
-        <div class="flex {% cycle 'flex-row','flex-row-reverse' %} p-5 text-white gap-10">
+        <div class="flex {% cycle 'flex-row','flex-row-reverse' %}">
             <div class="min-h-50 bg-cover bg-center basis-1/2" style="background-image: url('{{ item.image }}'); background-position:{{ item.position }}" >
             </div>
-            <div class=" border-2 border-green-color min-h-50 flex flex-col justify-center basis-1/2 p-5 uppercase">
+            <div class="min-h-50 flex flex-col justify-center basis-1/2 p-5p uppercase">
                 <h2 class="text-3xl pb-10"> {{ item.dogs }} </h2>
                 <p class="pb-5 capitalize"> {{ item.description }} </p>
                 <p class="pb-3"> {{ item.week }} <span class="ml-5"> {{ item.week-price }} kr </span>  </p>
@@ -63,7 +63,7 @@ seo:
   </section>
 
 <!---------------- This is additional price info ---------------->
-<section class="p-5p bg-beige-color">
+<section class="p-5p bg-middle-green-color">
     <div class="grid grid-cols-2 px-5p min-h-50 items-center">
         <div class="rounded-full aspect-square bg-cover bg-center w-[85%] p-5p border-white border-2" style="background-image: url('/images/hund-2.jpg'); background-position:{{ page.banner-image.position }}"> 
         </div>

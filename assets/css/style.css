@@ -603,6 +603,9 @@ video {
 .max-w-screen-xl {
   max-width: 1280px;
 }
+.max-w-\[70\%\] {
+  max-width: 70%;
+}
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -754,6 +757,9 @@ video {
 .p-8 {
   padding: 2rem;
 }
+.p-10p {
+  padding: 10%;
+}
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -797,6 +803,10 @@ video {
 .px-\[2\%\] {
   padding-left: 2%;
   padding-right: 2%;
+}
+.px-10p {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .pb-6 {
   padding-bottom: 1.5rem;
