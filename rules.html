@@ -24,17 +24,13 @@ seo:
 ---         
 <!--------------------------- This is the banner with text and image --------------------------->
 <section class="min-h-90 bg-fixed bg-cover bg-center" style="background-image: url('{{ page.banner.image }}'); background-position:{{ page.banner.position }}">
-  <div class="grid grid-cols-5">
 
-    <div class="col-span-2 justify-center items-center text-beige-color m-5 p-5p"> 
+    <div class="flex flex-col justify-center min-h-90 text-beige-color p-5p"> 
       <h2 class="uppercase text-4xl mb-5 font-cursive"> {{ page.featured.title }} </h2>
-      <p class="max-w-xl font-normal"> {{ page.featured.description }} </p>
-    </div>
-    <div class="col-span-full ml-5 px-[2%]">
+      <p class="max-w-xl font-normal mb-5"> {{ page.featured.description }} </p>
       <a href=" {{ page.featured.url }} " class="uppercase font-heading bg-white hover:bg-green-color text-green-color hover:text-white py-2 px-7 inline-block max-w-fit"> {{ page.featured.url-text }} </a>
     </div>
 
-  </div>
 </section>
 
 <!--------------------------- This is the grid with text and image - if you want to have image/text on different sides --------------------------->
