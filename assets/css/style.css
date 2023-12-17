@@ -585,9 +585,6 @@ video {
 .min-h-50 {
   min-height: 50vh;
 }
-.min-h-20 {
-  min-height: 20vh;
-}
 .min-h-40 {
   min-height: 40vh;
 }
@@ -602,6 +599,9 @@ video {
 }
 .min-h-70 {
   min-height: 70vh;
+}
+.min-h-20 {
+  min-height: 20vh;
 }
 .w-full {
   width: 100%;
@@ -906,11 +906,11 @@ video {
 .pb-0 {
   padding-bottom: 0px;
 }
-.pt-0 {
-  padding-top: 0px;
-}
 .pl-5p {
   padding-left: 5%;
+}
+.pt-0 {
+  padding-top: 0px;
 }
 .text-center {
   text-align: center;
