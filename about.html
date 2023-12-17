@@ -27,11 +27,17 @@ about-me:
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex earum sunt, soluta, fuga, aperiam aliquam temporibus asperiores libero assumenda vel et animi adipisci dolore quo minima? Rem nam rerum officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolores obcaecati, cumque corporis eligendi deleniti? Maxime non officiis officia necessitatibus quod deleniti atque esse, perspiciatis, distinctio blanditiis pariatur nam ut
 dogs:
   - title: Warg
-    description: Den äldsta hunden är mina tre hundar.
+    description: Den äldsta hunden är mina tre hundar. Han är den snällaste hunden du kan tänka dig.
+    image: /images/hund-14.jpg
+    position:  50% 50%
   - title: Waldermar
-    description: Den yngsta hunden på gården.
+    description: Den yngsta hunden på gården med massa sprall i kroppen.
+    image: /images/hund-13.jpg
+    position:  50% 50%
   - title: Elektro
-    description: Mellanhunden.
+    description: Mellanhunden som är ledaren i flocken. Han är en bestämd hund.
+    image: /images/hund-53.jpg
+    position: 50% 50%
 seo:
   title: Om Brantbrinks Hundpensionat
   description: "litet, gulligt hundpensionat. precis som hemma"
@@ -47,10 +53,16 @@ seo:
   <!-- <h2 class="text-6xl font-cursive-text justify-center items-center flex mb-10"> Hundarna som bor här permanent </h2> -->
   <div class="flex flex-wrap justify-center gap-10 ">
     {% for item in page.dogs %}
+
     <div class="min-w-50 min-h-50 box-shadow bg-beige-color text-middle-green-color p-5p pb-0 basis-1/4 shrink-0">
-      <h3 class="uppercase text-4xl font-heading"> {{ item.title }} </h3>
-      <p class="mt-5 font-normal"> {{ item.description }} </p>
+      <div class="min-h-20">
+        <h3 class="uppercase text-4xl font-heading"> {{ item.title }} </h3>
+        <p class="mt-5 font-normal"> {{ item.description }} </p>
+      </div>
+      <div class="min-h-40 bg-cover bg-center bg-middle-green-color my-15p" style="background-image: url('{{ item.image }}'); background-position:{{ item.position }}">
+      </div>
     </div>
+
     {% endfor %}
   </div>
 </section>
@@ -92,23 +104,21 @@ seo:
 
 <!--------------------------- This is the section about Marita --------------------------->
 <section class="p-5p bg-beige-color">
-    <div class="grid grid-cols-2 gap-5">
-
-
-        <div class="p-15p text-gray-600">
-            <h3 class="text-4xl font-heading"> {{ page.about-me.heading }} </h3>
-            <p class="my-5 font-normal"> {{ page.about-me.description }} </p>
-        </div>
-
-        <div class="min-h-90 bg-cover bg-center bg-middle-green-color" style="background-image: url('{{ page.about-me.image }}'); background-position:{{ page.about-me.position }}">
-        </div>
-
-
+  <div class="grid grid-cols-2 gap-5">
+    <div class="p-15p text-gray-600">
+      <h3 class="text-4xl font-heading"> {{ page.about-me.heading }} </h3>
+      <p class="my-5 font-normal"> {{ page.about-me.description }} </p>
     </div>
+
+    <div class="min-h-90 bg-cover bg-center bg-middle-green-color" style="background-image: url('{{ page.about-me.image }}'); background-position:{{ page.about-me.position }}">
+    </div>
+
+  </div>
 </section>
 
 <!---------------- This is the contact section ---------------->
 {% include contact-form.html %}
+
 <!--------------------------- This is the scrolling image banner --------------------------->
 <!-- <section class="bg-beige-color  m-0 p-0 slider-section">
     <div class="mx-auto max-w-full  text-center py-0 px-0">
