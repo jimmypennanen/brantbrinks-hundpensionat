@@ -55,6 +55,9 @@ module.exports = {
         '70': '70vh',
         '60': '60vh',
         '50': '50vh',
+        '40': '40vh',
+        '30': '30vh',
+        '20': '20vh'
       },
       aspectRatio: {
         'landscape': '3 / 2',
