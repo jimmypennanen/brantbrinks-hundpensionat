@@ -100,12 +100,12 @@ seo:
   <div class="grid grid-cols-3 gap-10">
 
     {% for item in page.about-image %}
-    <div class=" flex justify-center items-center relative min-h-40">
+    <div class="relative">
       <img src="{{ item.image }}" alt="" class="absolute inset-0 w-full h-full object-cover object-center ">
     </div>
     {% endfor %}
 
-    <div class="row-span-2 text-white flex flex-col items-center justify-center"> 
+    <div class="row-span-2 text-white"> 
       <h2 class="text-4xl pb-10p text-center uppercase text-white font-cursive"> Om pensionatet </h2>
       <h3 class="editable uppercase font-cursive text-2xl text-center pb-5p"> Nästan som hemma </h3>
         <p class="leading-7 p-5 pt-0 font-normal editable"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tempore incidunt, ex aspernatur unde facilis ipsam, illum itaque rerum perspiciatis ratione ipsa sapiente! Pariatur et, consequuntur vero ipsam mollitia cum. Lorem ipsum dolor sit amet consectetur adipisicing. </p>
@@ -116,7 +116,7 @@ seo:
     </div>
 
     {% for item in page.about-image2 %}
-    <div class=" flex justify-center items-center relative min-h-40">
+    <div class="relative">
       <img src="{{ item.image }}" alt="" class="absolute inset-0 w-full h-full object-cover object-center ">
     </div>
     {% endfor %}
@@ -148,7 +148,7 @@ seo:
 
 <!---------------- This is the icon section ---------------->
 <section class="bg-beige-color px-10p py-5 text-green-color">
-  <div class="flex flex-row gap-10">
+  <div class="flex gap-10">
 
     {% for item in page.why-us %}
 
