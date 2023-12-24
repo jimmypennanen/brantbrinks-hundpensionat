@@ -755,6 +755,15 @@ video {
 .border-8 {
   border-width: 8px;
 }
+.border-\[5px\] {
+  border-width: 5px;
+}
+.border-\[3px\] {
+  border-width: 3px;
+}
+.border {
+  border-width: 1px;
+}
 .border-b {
   border-bottom-width: 1px;
 }
@@ -775,6 +784,10 @@ video {
 .border-middle-green-color {
   --tw-border-opacity: 1;
   border-color: rgb(158 183 157 / var(--tw-border-opacity));
+}
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .bg-beige-color {
   --tw-bg-opacity: 1;

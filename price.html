@@ -2,8 +2,8 @@
 layout: default
 banner-image:
   image: /images/hund-6.jpg
-  blurred:
-  blurred-image: true
+  blurred: true
+  blurred-image:
   position: 50% 40%
   heading: Heading som jag ej vet vad
   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate porro quia suscipit non itaque libero veniam earum nesciunt? Sunt nemo beatae, tempore officiis reiciendis voluptas inventore iusto aperiam in numquam!
@@ -52,7 +52,7 @@ seo:
         <div class="flex {% cycle 'flex-row','flex-row-reverse' %}">
             <div class="min-h-50 bg-cover bg-center basis-1/2" style="background-image: url('{{ item.image }}'); background-position:{{ item.position }}" >
             </div>
-            <div class="min-h-50 flex flex-col basis-1/2 p-5p uppercase">
+            <div class="min-h-50 flex flex-col basis-1/2 p-5p uppercase border-[3px] border-green-color">
                 <h2 class="text-4xl pb-10 font-cursive"> {{ item.dogs }} </h2>
                 <p class="pb-5 capitalize font-normal"> {{ item.description }} </p>
                 <p class="pb-3 font-normal"> {{ item.week }} <span class="ml-5"> {{ item.week-price }} kr </span>  </p>
