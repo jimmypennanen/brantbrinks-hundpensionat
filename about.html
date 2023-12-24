@@ -24,7 +24,7 @@ about-me:
    image: /images/hund-60.jpg
    position: 50% 30%
    heading: Marita är mitt fantastiska namn
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex earum sunt, soluta, fuga, aperiam aliquam temporibus asperiores libero assumenda vel et animi adipisci dolore quo minima? Rem nam rerum officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolores obcaecati, cumque corporis eligendi deleniti? Maxime non officiis officia necessitatibus quod deleniti atque esse, perspiciatis, distinctio blanditiis pariatur nam ut
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex earum sunt, soluta, fuga, aperiam aliquam temporibus asperiores libero assumenda vel et animi adipisci dolore quo minima? Rem nam rerum officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolores obcaecati, cumque corporis eligendi deleniti? Maxime non officiis officia necessitatibus quod deleniti atque esse, perspiciatis, distinctio blanditiis pariatur nam ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, vel eveniet! Hic vitae placeat atque voluptas libero sequi, fugiat amet, repellat ad neque id quia aperiam ratione inventore quos recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quo nihil nostrum deleniti! Iste odit dicta praesentium modi laboriosam, omnis iure magnam, voluptatem, consequatur itaque cupiditate et voluptatum dolore necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, nulla pariatur mollitia laboriosam repellendus esse veniam magni sint perferendis quibusdam, fugit accusantium cum animi et atque rem qui. Corrupti, odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa blanditiis deserunt. Consectetur, fugiat odit? Soluta, id veniam in, reprehenderit.
 dogs:
   - title: Warg
     description: Den äldsta hunden är mina tre hundar. Han är den snällaste hunden du kan tänka dig.
@@ -38,6 +38,9 @@ dogs:
     description: Mellanhunden som är ledaren i flocken. Han är en bestämd hund.
     image: /images/hund-53.jpg
     position: 50% 50%
+small-image:
+    image: /images/chicken-5.jpg
+    position: 50% 45%
 seo:
   title: Om Brantbrinks Hundpensionat
   description: "litet, gulligt hundpensionat. precis som hemma"
@@ -49,7 +52,7 @@ seo:
 {% include image-banner.html %}
 
 <!--------------------------- This is the section about Maritas dogs new --------------------------->
-<section class="p-5p pb-0 bg-beige-color">
+<section class="p-5p bg-beige-color">
   <!-- <h2 class="text-6xl font-cursive-text justify-center items-center flex mb-10"> Hundarna som bor här permanent </h2> -->
   <div class="flex flex-wrap justify-center gap-10 ">
     {% for item in page.dogs %}
@@ -59,7 +62,7 @@ seo:
         <h3 class="uppercase text-4xl font-heading"> {{ item.title }} </h3>
         <p class="mt-5 font-normal"> {{ item.description }} </p>
       </div>
-      <div class="min-h-40 bg-cover bg-center bg-middle-green-color my-15p" style="background-image: url('{{ item.image }}'); background-position:{{ item.position }}">
+      <div class="min-h-40 bg-cover bg-center bg-middle-green-color mt-5p mb-15p" style="background-image: url('{{ item.image }}'); background-position:{{ item.position }}">
       </div>
     </div>
 
@@ -102,6 +105,10 @@ seo:
 
 </section> -->
 
+<!--------------------------- This is the green bg-banner --------------------------->
+<section class="p-5p bg-middle-green-color min-h-40 flex items-center justify-center">
+  <h3 class="font-cursive text-4xl text-beige-color"> Jag har alltid älskat djur </h3>
+</section>
 <!--------------------------- This is the section about Marita --------------------------->
 <section class="p-5p bg-beige-color">
   <div class="grid grid-cols-2 gap-5">
@@ -114,6 +121,16 @@ seo:
     </div>
 
   </div>
+</section>
+
+<!---------------- This is an image banner ---------------->
+<section class="bg-middle-green-color min-h-40 flex flex-col items-center justify-center">
+
+  <h3 class="font-cursive text-4xl text-beige-color"> På gården finns även vi. </h3>
+
+  <div class="max-w-screen-3xl bg-cover bg-center p-25p " style="background-image: url('{{ page.small-image.image }}'); background-position:{{ page.small-image.position }}">
+  </div>
+
 </section>
 
 <!---------------- This is the contact section ---------------->

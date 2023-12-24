@@ -465,6 +465,9 @@ video {
 .z-10 {
   z-index: 10;
 }
+.z-20 {
+  z-index: 20;
+}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -483,9 +486,9 @@ video {
 .m-0 {
   margin: 0px;
 }
-.my-15p {
-  margin-top: 15%;
-  margin-bottom: 15%;
+.my-5p {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 .my-5 {
   margin-top: 1.25rem;
@@ -552,6 +555,15 @@ video {
 .mb-16 {
   margin-bottom: 4rem;
 }
+.mt-5p {
+  margin-top: 5%;
+}
+.mb-10p {
+  margin-bottom: 10%;
+}
+.mb-15p {
+  margin-bottom: 15%;
+}
 .mb-5p {
   margin-bottom: 5%;
 }
@@ -572,6 +584,9 @@ video {
 }
 .h-full {
   height: 100%;
+}
+.h-20 {
+  height: 5rem;
 }
 .max-h-0 {
   max-height: 0px;
@@ -597,11 +612,23 @@ video {
 .min-h-60 {
   min-height: 60vh;
 }
+.min-h-\[20vh\] {
+  min-height: 20vh;
+}
 .min-h-\[40vh\] {
   min-height: 40vh;
 }
 .min-h-70 {
   min-height: 70vh;
+}
+.min-h-10 {
+  min-height: 10vh;
+}
+.min-h-80 {
+  min-height: 80vh;
+}
+.min-h-30 {
+  min-height: 30vh;
 }
 .w-full {
   width: 100%;
@@ -682,11 +709,11 @@ video {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -843,6 +870,12 @@ video {
 .p-8 {
   padding: 2rem;
 }
+.p-50p {
+  padding: 50%;
+}
+.p-25p {
+  padding: 25%;
+}
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -895,9 +928,9 @@ video {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
-.py-5p {
-  padding-top: 5%;
-  padding-bottom: 5%;
+.px-50p {
+  padding-left: 50%;
+  padding-right: 50%;
 }
 .pb-6 {
   padding-bottom: 1.5rem;
@@ -926,17 +959,20 @@ video {
 .pb-0 {
   padding-bottom: 0px;
 }
-.pb-10p {
-  padding-bottom: 10%;
-}
 .pt-0 {
   padding-top: 0px;
 }
 .pl-5p {
   padding-left: 5%;
 }
-.pl-0 {
-  padding-left: 0px;
+.pb-50p {
+  padding-bottom: 50%;
+}
+.pb-25p {
+  padding-bottom: 25%;
+}
+.pb-10p {
+  padding-bottom: 10%;
 }
 .pt-5p {
   padding-top: 5%;
