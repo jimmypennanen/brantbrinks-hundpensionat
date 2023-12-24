@@ -29,6 +29,7 @@ price-cards:
    weekend-price: 600
 about-image:
   - image: /images/hund-17.jpg
+about-image2:
   - image: /images/hund-19.jpg
   - image: /images/hund-37.jpg
   - image: /images/hund-27.jpg
@@ -69,8 +70,8 @@ seo:
 
 <!---------------- This is the cards with prices ---------------->
 <section class="p-5p text-center text-white bg-beige-color">
-  <h2 class=" text-6xl font-cursive mb-10 text-green-color z-20"> Priser </h2>
-  <div class="flex flex-row justify-center gap-10 min-h-[20vh]">
+  <h2 class=" text-6xl font-cursive mb-10 text-green-color"> Priser </h2>
+  <div class="flex gap-10">
 
     {% for item in page.price-cards %}
 
@@ -80,7 +81,7 @@ seo:
 
   </div>
   <div class="mt-5">
-    <a href="/price.html" class="uppercase inline-block font-heading text-lg border-middle-green-color border-2 bg-middle-green-color hover:bg-beige-color text-green-color hover:text-green-color hover:border-green-color hover:border-2 py-2 px-7 inline-block mt-6">
+    <a href="/price.html" class="uppercase font-heading text-lg border-middle-green-color border-2 bg-middle-green-color hover:bg-beige-color text-green-color hover:text-green-color hover:border-green-color hover:border-2 py-2 px-7 inline-block mt-6">
     mer info </a>
   </div>
 </section>
@@ -96,27 +97,31 @@ seo:
 
 <section class="bg-middle-green-color p-5p">
 
-  <h2 class="text-4xl pb-5p text-center uppercase text-white font-cursive"> Om pensionatet </h2>
-
-  <div class="grid grid-cols-4 gap-10">
+  <div class="grid grid-cols-3 gap-10">
 
     {% for item in page.about-image %}
-    <div class=" flex justify-center items-center relative min-h-40">
+    <div class="relative">
+      <img src="{{ item.image }}" alt="" class="absolute inset-0 w-full h-full object-cover object-center ">
+    </div>
+    {% endfor %}
+
+    <div class="row-span-2 text-white"> 
+      <h2 class="text-4xl pb-10p text-center uppercase text-white font-cursive"> Om pensionatet </h2>
+      <h3 class="editable uppercase font-cursive text-2xl text-center pb-5p"> Nästan som hemma </h3>
+        <p class="leading-7 p-5 pt-0 font-normal editable"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tempore incidunt, ex aspernatur unde facilis ipsam, illum itaque rerum perspiciatis ratione ipsa sapiente! Pariatur et, consequuntur vero ipsam mollitia cum. Lorem ipsum dolor sit amet consectetur adipisicing. </p>
+        <p class="leading-7 p-5 pt-0 font-normal editable"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tempore incidunt, ex aspernatur unde facilis ipsam, illum itaque rerum perspiciatis ratione ipsa sapiente! Pariatur et, consequuntur vero ipsam mollitia cum. Lorem ipsum dolor sit amet consectetur adipisicing. </p>
+        <div class="text-center">
+          <a href=" {{ page.featured.url }} " class="uppercase font-heading bg-white hover:bg-green-color text-green-color hover:text-white py-2 px-7 inline-block self-center"> läs mer </a>
+        </div>
+    </div>
+
+    {% for item in page.about-image2 %}
+    <div class="relative">
       <img src="{{ item.image }}" alt="" class="absolute inset-0 w-full h-full object-cover object-center ">
     </div>
     {% endfor %}
 
   </div>  
-
-  <div class=" text-white flex flex-col items-center"> 
-    <h3 class="editable uppercase font-cursive p-5 text-2xl text-center"> Nästan som hemma </h3>
-      <p class="leading-7 p-5 pt-0 font-normal editable"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam quaerat ipsam enim consequuntur eos labore dolorum deserunt ducimus, expedita iste corrupti nesciunt nisi maxime iure ut ullam accusamus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tempore incidunt, ex aspernatur unde facilis ipsam, illum itaque rerum perspiciatis ratione ipsa sapiente! Pariatur et, 
-      consequuntur vero ipsam mollitia cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-      <div class="text-center">
-        <a href=" {{ page.featured.url }} " class="uppercase font-heading bg-white hover:bg-green-color text-green-color hover:text-white py-2 px-7 inline-block self-center"> läs mer </a>
-      </div>
-  </div>
-
 </section>
 
 <!-- <section class="bg-middle-green-color p-5p">
@@ -143,7 +148,7 @@ seo:
 
 <!---------------- This is the icon section ---------------->
 <section class="bg-beige-color px-10p py-5 text-green-color">
-  <div class="flex flex-row gap-10">
+  <div class="flex gap-10">
 
     {% for item in page.why-us %}
 

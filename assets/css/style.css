@@ -477,6 +477,9 @@ video {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
 .m-5 {
   margin: 1.25rem;
 }
@@ -560,6 +563,9 @@ video {
 }
 .mb-15p {
   margin-bottom: 15%;
+}
+.mb-5p {
+  margin-bottom: 5%;
 }
 .block {
   display: block;
@@ -705,6 +711,9 @@ video {
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -948,6 +957,12 @@ video {
 }
 .pb-25p {
   padding-bottom: 25%;
+}
+.pb-10p {
+  padding-bottom: 10%;
+}
+.pt-5p {
+  padding-top: 5%;
 }
 .text-center {
   text-align: center;
