@@ -49,10 +49,10 @@ seo:
     <h2 class="text-6xl font-cursive mb-5p"> Priser </h2>
 
         {% for item in page.price-grid %}
-        <div class="flex {% cycle 'flex-row','flex-row-reverse' %}">
+        <div class="flex {% cycle 'flex-row','flex-row-reverse' %} p-10">
             <div class="min-h-50 bg-cover bg-center basis-1/2" style="background-image: url('{{ item.image }}'); background-position:{{ item.position }}" >
             </div>
-            <div class="min-h-50 flex flex-col basis-1/2 p-5p uppercase border-[3px] border-green-color">
+            <div class="min-h-50 flex flex-col basis-1/2 p-5p uppercase">
                 <h2 class="text-4xl pb-10 font-cursive"> {{ item.dogs }} </h2>
                 <p class="pb-5 capitalize font-normal"> {{ item.description }} </p>
                 <p class="pb-3 font-normal"> {{ item.week }} <span class="ml-5"> {{ item.week-price }} kr </span>  </p>
