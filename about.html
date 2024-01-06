@@ -54,11 +54,11 @@ seo:
 <!--------------------------- This is the section about Maritas dogs new --------------------------->
 <section class="p-5p bg-beige-color">
   <!-- <h2 class="text-6xl font-cursive-text justify-center items-center flex mb-10"> Hundarna som bor här permanent </h2> -->
-  <div class="flex flex-wrap justify-center gap-10 ">
+  <div class="grid grid-cols-3 justify-center gap-16 p-16 ">
     {% for item in page.dogs %}
 
-    <div class="min-w-50 min-h-50 box-shadow bg-beige-color text-middle-green-color p-5p pb-0 basis-1/4 shrink-0">
-      <div class="min-h-20">
+    <div class="box-shadow bg-beige-color text-middle-green-color p-16 pb-0 flex flex-col justify-between">
+      <div class="">
         <h3 class="uppercase text-4xl font-heading"> {{ item.title }} </h3>
         <p class="mt-5 font-normal"> {{ item.description }} </p>
       </div>

@@ -729,6 +729,9 @@ video {
 .gap-3 {
   gap: 0.75rem;
 }
+.gap-16 {
+  gap: 4rem;
+}
 .self-center {
   align-self: center;
 }
@@ -846,6 +849,15 @@ video {
 }
 .p-10 {
   padding: 2.5rem;
+}
+.p-16 {
+  padding: 4rem;
+}
+.p-10p {
+  padding: 10%;
+}
+.p-24 {
+  padding: 6rem;
 }
 .py-6 {
   padding-top: 1.5rem;
@@ -1044,6 +1056,9 @@ video {
 }
 .duration-100 {
   transition-duration: 100ms;
+}
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 
